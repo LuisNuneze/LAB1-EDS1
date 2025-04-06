@@ -1,0 +1,132 @@
+Disease,Lady Gaga,MAYHEM,229997,82,https://open.spotify.com/track/0T3Hw3kPj9T2E4UoaSXmfn
+Abracadabra,Lady Gaga,MAYHEM,223398,87,https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR
+Garden Of Eden,Lady Gaga,MAYHEM,239720,87,https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd
+Perfect Celebrity,Lady Gaga,MAYHEM,229252,82,https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM
+Vanish Into You,Lady Gaga,MAYHEM,244915,85,https://open.spotify.com/track/5IoPnNiYAOvHHJpz13wzRL
+Killah (feat. Gesaffelstein),Lady Gaga;Gesaffelstein,MAYHEM,210651,81,https://open.spotify.com/track/4pNzBbGcqXofx8mLBPTeih
+Zombieboy,Lady Gaga,MAYHEM,213337,83,https://open.spotify.com/track/0ElVpg9XIswx3XWs6kUj6a
+LoveDrug,Lady Gaga,MAYHEM,193232,82,https://open.spotify.com/track/3hcivoswCVR8LZkHR8MYA5
+How Bad Do U Want Me,Lady Gaga,MAYHEM,238886,85,https://open.spotify.com/track/2rvd6akG8qEtBNUvQpN7iY
+Don't Call Tonight,Lady Gaga,MAYHEM,225804,80,https://open.spotify.com/track/0uoWOZeZZiC90RMNDQBqj4
+Shadow Of A Man,Lady Gaga,MAYHEM,199723,84,https://open.spotify.com/track/6OC87jHRiovNPEUrgaqFSu
+The Beast,Lady Gaga,MAYHEM,234280,78,https://open.spotify.com/track/08svDlp6TNFlfMIgjjZlYI
+Blade Of Grass,Lady Gaga,MAYHEM,257006,77,https://open.spotify.com/track/7xIoinMSiwIp5BWR7toO1O
+Die With A Smile,Lady Gaga;Bruno Mars,MAYHEM,251667,89,https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ
+Dance In The Dark,Lady Gaga,The Fame Monster,288960,38,https://open.spotify.com/track/6YAC2BXXCwCBp1PnF4MXD4
+I Like It Rough,Lady Gaga,The Fame,202493,51,https://open.spotify.com/track/2FABVB96EnV25oBToWNUk4
+Sinner’s Prayer,Lady Gaga,Joanne (Deluxe),223386,50,https://open.spotify.com/track/6oT5s4bAHOMM5cvt1v9Kzv
+Enigma,Lady Gaga,Chromatica,179760,55,https://open.spotify.com/track/7JDbfYUHjDzQPFSDh5lzGs
+ARTPOP,Lady Gaga,ARTPOP,247533,62,https://open.spotify.com/track/73zDQykFwu3yT5VQ6MwYbh
+Smile,Lady Gaga,Harlequin,218721,46,https://open.spotify.com/track/38ILZqA8DlkbKfjosEDSb1
+Electric Chapel,Lady Gaga,Born This Way (Special Edition),252240,45,https://open.spotify.com/track/5ovLCLFRWKBThz15ntjE8d
+Good Morning,Lady Gaga,Harlequin,166300,47,https://open.spotify.com/track/6RyJt2SvLFghIDe1eCviD9
+Get Happy (2024),Lady Gaga,Harlequin,191700,45,https://open.spotify.com/track/2YQ0DrIFS90FEK8T4JOa8W
+Oh, When The Saints,Lady Gaga,Harlequin,222603,46,https://open.spotify.com/track/2Qt1GqEOR6gfBCNTZv9Q8P
+World On A String,Lady Gaga,Harlequin,157863,47,https://open.spotify.com/track/1CmyFUdrzcI2TldyJzOHSb
+If My Friends Could See Me Now,Lady Gaga,Harlequin,161733,45,https://open.spotify.com/track/0I27tCo8rexgdYnhkSaL7k
+That's Entertainment,Lady Gaga,Harlequin,249466,45,https://open.spotify.com/track/2zOSxEAk90JTKYNHqE8LXc
+The Joker,Lady Gaga,Harlequin,174734,52,https://open.spotify.com/track/5zZoEDawAlJNgUzxknlV9V
+Folie à Deux,Lady Gaga,Harlequin,178714,47,https://open.spotify.com/track/1ud0FiEQLVIDlWEqDIEvwW
+Gonna Build A Mountain,Lady Gaga,Harlequin,171654,44,https://open.spotify.com/track/2KniNOsSdTc2XUewjfoRyF
+Close To You,Lady Gaga,Harlequin,164166,59,https://open.spotify.com/track/6DqmPvzGa002Qa2NQ14hCV
+Happy Mistake,Lady Gaga,Harlequin,245435,60,https://open.spotify.com/track/5DQIZ8XC0EP7cfRFrtzY5h
+That's Life,Lady Gaga,Harlequin,184497,49,https://open.spotify.com/track/7jTLS32BMC2UyTTjEUW6BT
+Sweet Sounds Of Heaven (feat. Lady Gaga),The Rolling Stones;Lady Gaga,Sweet Sounds Of Heaven,442667,44,https://open.spotify.com/track/5YW7oSt4jHBO7yE9XER2Be
+Hold My Hand,Lady Gaga,Hold My Hand (Music From The Motion Picture "Top Gun: Maverick"),225300,74,https://open.spotify.com/track/0oWraSo5ASJ0h1BEagTyEw
+Fashion,Lady Gaga,Confessions of a Shopaholic,169746,0,https://open.spotify.com/track/4xKywYMUH8cnSLQ1TgVuSH
+Alice,Lady Gaga,Chromatica,177600,63,https://open.spotify.com/track/41A89rj3GoMG6ktN37L7PG
+Stupid Love,Lady Gaga,Chromatica,193533,69,https://open.spotify.com/track/7yBbV2k2S2uhaQc24NF2xt
+Rain On Me (with Ariana Grande),Lady Gaga;Ariana Grande,Chromatica,182200,74,https://open.spotify.com/track/7ju97lgwC2rKQ6wwsf9no9
+Free Woman,Lady Gaga,Chromatica,191466,61,https://open.spotify.com/track/4L6ihclQPu1hqP9r3WNJjQ
+Fun Tonight,Lady Gaga,Chromatica,173426,54,https://open.spotify.com/track/6hyQVqfHFvsJDjcmj4qrHf
+911,Lady Gaga,Chromatica,172133,67,https://open.spotify.com/track/6qI0MU175Dk2DeoUjlrOpy
+Plastic Doll,Lady Gaga,Chromatica,221666,54,https://open.spotify.com/track/3CidPLqWXqgesJlwYVJZdy
+Sour Candy (with BLACKPINK),Lady Gaga;BLACKPINK,Chromatica,157706,65,https://open.spotify.com/track/1IWNylpZ477gIVUDpJL66u
+Replay,Lady Gaga,Chromatica,186653,62,https://open.spotify.com/track/7sKbyYeJnITO1Eh9xd0lKd
+Sine From Above (with Elton John),Lady Gaga;Elton John,Chromatica,244880,53,https://open.spotify.com/track/0zzsyWc45eUcSjw4FNHxeN
+1000 Doves,Lady Gaga,Chromatica,215480,53,https://open.spotify.com/track/62hTXlVQacy3pjBW4ntRPl
+Babylon,Lady Gaga,Chromatica,161733,61,https://open.spotify.com/track/5DttNeiizFqWUON9hZBqTY
+Just Dance,Lady Gaga;Colby O'Donis,The Fame,241933,79,https://open.spotify.com/track/2x7MyWybabEz6Y6wvHuwGE
+LoveGame,Lady Gaga,The Fame,216333,73,https://open.spotify.com/track/0TcJ7QWpggdSg8t0fHThHm
+Paparazzi,Lady Gaga,The Fame,208306,75,https://open.spotify.com/track/7Hqig8kp32q2Ire3ECQvWM
+Poker Face,Lady Gaga,The Fame,237200,80,https://open.spotify.com/track/5R8dQOPq8haW94K7mgERlO
+Eh, Eh (Nothing Else I Can Say),Lady Gaga,The Fame,175360,56,https://open.spotify.com/track/4CIu6ip0JlQeCqLLfoqlDW
+Beautiful, Dirty, Rich,Lady Gaga,The Fame,172413,55,https://open.spotify.com/track/3qrQtMmkuV79LMGfsGDHRf
+The Fame,Lady Gaga,The Fame,222106,53,https://open.spotify.com/track/25pWYL5848CIMh3OfnDroM
+Money Honey,Lady Gaga,The Fame,170293,55,https://open.spotify.com/track/5ww65ORP2faNi9ygUjxwId
+Starstruck,Lady Gaga;Space Cowboy;Flo Rida,The Fame,217120,59,https://open.spotify.com/track/2DLsZCx5UEqVB3vY3kZWWB
+Boys Boys Boys,Lady Gaga,The Fame,200813,53,https://open.spotify.com/track/129NQr4tA6j60b59rflcTY
+Paper Gangsta,Lady Gaga,The Fame,263360,50,https://open.spotify.com/track/0LtZYj18X8mpZ2M6A7nA8t
+Brown Eyes,Lady Gaga,The Fame,243000,48,https://open.spotify.com/track/6YSrwzBdLvN5RtzYmWsUPx
+Summerboy,Lady Gaga,The Fame,253946,60,https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy
+Disco Heaven,Lady Gaga,The Fame,221480,49,https://open.spotify.com/track/20rDqWMo6aYgeTXsX8l2rn
+Bad Romance,Lady Gaga,The Fame Monster,294573,46,https://open.spotify.com/track/6TAdq4dNZx3JN2vm6Pr4hi
+Alejandro,Lady Gaga,The Fame Monster,274213,45,https://open.spotify.com/track/0RsTUK89eNgV2YXg37BeJQ
+Monster,Lady Gaga,The Fame Monster,249280,42,https://open.spotify.com/track/3lM8PqytBRX4ImTznLfk2n
+Speechless,Lady Gaga,The Fame Monster,270813,34,https://open.spotify.com/track/5QB0aILqhJpYiFXoOrB2kR
+Telephone,Lady Gaga;Beyoncé,The Fame Monster,220640,45,https://open.spotify.com/track/4BkhzD8dCxUFZFzwmK2NnD
+So Happy I Could Die,Lady Gaga,The Fame Monster,234866,36,https://open.spotify.com/track/5wvZdHIkFmu21PKqDLxg0d
+Teeth,Lady Gaga,The Fame Monster,220706,32,https://open.spotify.com/track/2OycPJAn1YudMCWtEjUlXO
+Video Phone (feat. Lady Gaga),Beyoncé;Lady Gaga;William Burke,I AM...SASHA FIERCE NEW DELUXE EDITION,304693,30,https://open.spotify.com/track/4qpbwCqy1fDfLqGwCevmND
+Marry The Night,Lady Gaga,Born This Way (Special Edition),264520,46,https://open.spotify.com/track/4tB0UIYNWsUYsIR3r6a8zY
+Born This Way,Lady Gaga,Born This Way (Special Edition),260252,70,https://open.spotify.com/track/6r2BECwMgEoRb5yLfp0Hca
+Government Hooker,Lady Gaga,Born This Way (Special Edition),254266,67,https://open.spotify.com/track/4KZAsdL0PeGvmPbSr0hyG4
+Judas,Lady Gaga,Born This Way (Special Edition),249066,55,https://open.spotify.com/track/7rr5DQM980mOF1UtIC4q6v
+Americano,Lady Gaga,Born This Way (Special Edition),246533,63,https://open.spotify.com/track/4LrHrb9fZ39fQsMyUdrQXO
+Hair,Lady Gaga,Born This Way (Special Edition),307893,49,https://open.spotify.com/track/2uk0YH2ahN0UE5jaCMa5jn
+ScheiBe,Lady Gaga,Born This Way (Special Edition),225466,60,https://open.spotify.com/track/1RFXENx9ILC6PECmNhEstC
+Bloody Mary,Lady Gaga,Born This Way (Special Edition),244760,70,https://open.spotify.com/track/11BKm0j4eYoCPPpCONAVwA
+Black Jesus + Amen Fashion,Lady Gaga,Born This Way (Special Edition),216293,41,https://open.spotify.com/track/3u8L4te13sTuqyHNR7j2rB
+Bad Kids,Lady Gaga,Born This Way (Special Edition),230973,42,https://open.spotify.com/track/0zW1LzKUCJeHZBKMmkardw
+Fashion Of His Love,Lady Gaga,Born This Way (Special Edition),219106,41,https://open.spotify.com/track/6OpnHKF0mmhZmqsR7yY2pK
+Highway Unicorn (Road To Love),Lady Gaga,Born This Way (Special Edition),255746,41,https://open.spotify.com/track/63EubPPucSZlK4mXAZOP6G
+Heavy Metal Lover,Lady Gaga,Born This Way (Special Edition),252546,65,https://open.spotify.com/track/5yhw9YeXOh3kYCn2NII9bW
+The Queen,Lady Gaga,Born This Way (Special Edition),316520,39,https://open.spotify.com/track/2WWOPf09hVAMk4Y5G3Qp4R
+You And I,Lady Gaga,Born This Way (Special Edition),307360,50,https://open.spotify.com/track/6szOfaZn6H3rZXnUqgJ4R7
+The Edge Of Glory,Lady Gaga,Born This Way (Special Edition),320546,49,https://open.spotify.com/track/6uxYfENm7zw050dNUi031W
+Aura,Lady Gaga,ARTPOP,235733,59,https://open.spotify.com/track/3fibIzbkYbvTmdoD5u2nPm
+Venus,Lady Gaga,ARTPOP,233720,66,https://open.spotify.com/track/3n3S5cH3IyaOswY2XSUGTS
+G.U.Y.,Lady Gaga,ARTPOP,232666,70,https://open.spotify.com/track/4rYLpaNFzt6pkQnrCvVHUw
+Sexxx Dreams,Lady Gaga,ARTPOP,214640,59,https://open.spotify.com/track/0kS6GezxkbM5YXffQFnID6
+Jewels N' Drugs,Lady Gaga;T.I.;Too $hort;Twista,ARTPOP,228040,53,https://open.spotify.com/track/2MqhCzdw8Py25ZHY2Di3Sr
+MANiCURE,Lady Gaga,ARTPOP,199786,56,https://open.spotify.com/track/70VukjWPu4TR2xQSRaEwlL
+Do What U Want,Lady Gaga;Christina Aguilera,Do What U Want,216573,65,https://open.spotify.com/track/5XKXMWPACPq51OiqzxenZo
+Swine,Lady Gaga,ARTPOP,268600,56,https://open.spotify.com/track/6AczxDV0grtXZZ7h8xI5cS
+Donatella,Lady Gaga,ARTPOP,264960,59,https://open.spotify.com/track/2OoLIJNxpsNs9wIHqWQrED
+Fashion!,Lady Gaga,ARTPOP,239853,55,https://open.spotify.com/track/2I5tTeFL69KZCiO0YYoql7
+Mary Jane Holland,Lady Gaga,ARTPOP,277800,54,https://open.spotify.com/track/0gMpKudmJ2ljDVAdIe9DmR
+Dope,Lady Gaga,ARTPOP,221546,50,https://open.spotify.com/track/1gPCk3KUE83rPdz9QqGsX9
+Gypsy,Lady Gaga,ARTPOP,248706,54,https://open.spotify.com/track/2BnfMbmWbfqi7ac5y7GHXn
+Applause,Lady Gaga,ARTPOP,212333,79,https://open.spotify.com/track/5ka2ajep9OAvU5Sgduhiex
+Til It Happens To You,Lady Gaga,Til It Happens To You,258093,50,https://open.spotify.com/track/0bCCGLHflR08UVA6oJJc8I
+Diamond Heart,Lady Gaga,Joanne (Deluxe),210426,52,https://open.spotify.com/track/45CPhDilfgK14IE7LbNvPh
+A-YO,Lady Gaga,Joanne (Deluxe),207720,54,https://open.spotify.com/track/6Az2Ll2CPnWYQ2BgiHf4Di
+Joanne,Lady Gaga,Joanne (Deluxe),196906,58,https://open.spotify.com/track/2kecdnlyueotEMC8rdNlf6
+John Wayne,Lady Gaga,Joanne (Deluxe),174306,59,https://open.spotify.com/track/3d0VZU6Mf2hdZRHA4zry8S
+Dancin' In Circles,Lady Gaga,Joanne (Deluxe),207173,53,https://open.spotify.com/track/0lqcnnclUdVbPPboOldEPp
+Perfect Illusion,Lady Gaga,Joanne (Deluxe),182000,63,https://open.spotify.com/track/56ZrTFkANjeAMiS14njg4E
+Million Reasons,Lady Gaga,Joanne (Deluxe),205280,77,https://open.spotify.com/track/7dZ1Odmx9jWIweQSatnRqo
+Come To Mama,Lady Gaga,Joanne (Deluxe),254773,47,https://open.spotify.com/track/5YWHg9507fUXvtdSW3x6cF
+Hey Girl,Lady Gaga;Florence Welch,Joanne (Deluxe),255413,56,https://open.spotify.com/track/554PnB96IltLzVlbinBstw
+Angel Down,Lady Gaga,Joanne (Deluxe),229146,49,https://open.spotify.com/track/5O31BTWa4XNFtE3zVgeCoh
+Grigio Girls,Lady Gaga,Joanne (Deluxe),180466,48,https://open.spotify.com/track/6Xxvdy1m9TX9HTxOzQcfuV
+Just Another Day,Lady Gaga,Joanne (Deluxe),178000,47,https://open.spotify.com/track/52vpwwKa8qFP1WDIsky1xT
+The Cure,Lady Gaga,The Cure,211363,65,https://open.spotify.com/track/34oB5r0lcN3fYWCs2uA1k5
+Don't Let Me Be Misunderstood (feat. Lady Gaga),Brian Newman;Lady Gaga,Showboat,262240,39,https://open.spotify.com/track/6DO29wBOfESk3C2sScpxZn
+I Want Your Love,Nile Rodgers;CHIC;Lady Gaga,It’s About Time,296240,52,https://open.spotify.com/track/5hlN9YiUVFC7NGRiwyYFKi
+La Vie En Rose,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),179760,44,https://open.spotify.com/track/3tv3f29zjhzL3kcvQE8tGl
+Shallow - Radio Edit,Lady Gaga;Bradley Cooper,A Star Is Born Soundtrack (Without Dialogue),217212,72,https://open.spotify.com/track/6QfS2wq5sSC1xAJCQsTSlj
+Music To My Eyes,Lady Gaga;Bradley Cooper,A Star Is Born Soundtrack (Without Dialogue),199200,55,https://open.spotify.com/track/5IXk9TVBuxG87sFrwclBJw
+Diggin' My Grave,Lady Gaga;Bradley Cooper,A Star Is Born Soundtrack (Without Dialogue),237306,44,https://open.spotify.com/track/3iYYUkgkIgZy20xUVaOyLU
+Always Remember Us This Way,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),210200,85,https://open.spotify.com/track/2rbDhOo9Fh61Bbu23T2qCk
+Look What I Found,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),175240,48,https://open.spotify.com/track/6Id5RM56PFn2hB4I0ox0WA
+Heal Me,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),196800,43,https://open.spotify.com/track/5eRo6g2COIM4OE3UEHMA4g
+I Don't Know What Love Is,Lady Gaga;Bradley Cooper,A Star Is Born Soundtrack (Without Dialogue),177293,45,https://open.spotify.com/track/3PPeqAc0fCfFdh8cUYShn6
+Is That Alright?,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),191280,48,https://open.spotify.com/track/378u8gf9qpJ4ZhxHEvrodl
+Why Did You Do That?,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),184960,44,https://open.spotify.com/track/1sv0BhPPnrUgQ6dziZlmuM
+Hair Body Face,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),202640,53,https://open.spotify.com/track/4gdfWGyzB9j4ZVc2JWdpv2
+Before I Cry,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),258545,46,https://open.spotify.com/track/1JcjOWpaQr2crUaJj2kRYQ
+I'll Never Love - Extended Version - Radio Edit,Lady Gaga,A Star Is Born Soundtrack (Without Dialogue),328016,50,https://open.spotify.com/track/54e5nUP7pHqVfaiCsq9FpW
+Your Song,Lady Gaga,Your Song,256746,52,https://open.spotify.com/track/0fJtP2HkuZtzfh30XIMtPw
+Love Me Right,Lady Gaga,Chromatica [Deluxe Edition],170000,0,None
+1000 Doves (Piano Demo),Lady Gaga,Chromatica [Deluxe Edition],168000,0,None

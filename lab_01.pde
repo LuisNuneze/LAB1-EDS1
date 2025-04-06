@@ -1,32 +1,58 @@
 import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+String pythonExecutable;
 
 void setup() {
-  // Escribir la ID
   String playlistId = "2FvRD74Yopb6oqxLNcEZBh";
+  
+  BufferedWriter writer = new BufferedWriter(".\\playlist_id.txt");
   saveStrings("playlist_id.txt", new String[]{playlistId});
-  println("ID guardado.");
+  println("ID guardado en playlist_id.txt.");
 
-  // Ejecutar el análisis automático
+  // Leer ruta de Python
+  String[] pathLines = loadStrings("python_path.txt");
+  if (pathLines != null && pathLines.length > 0) {
+    pythonExecutable = pathLines[0].trim();
+  } else {
+    println("¡Error! Ruta de Python no configurada.");
+    exit();
+  }
+
   try {
-    Process p = Runtime.getRuntime().exec("python spotify_playlist.py");
-    p.waitFor();
+    String scriptPath = sketchPath("spotify_playlist.py");
+    String command = pythonExecutable + " \"" + scriptPath + "\"";
+    println("Ejecutando comando: " + command);
+    Process p = Runtime.getRuntime().exec(command);
 
-    // Leer la salida del proceso (opcional, por si querés ver qué pasó)
     BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
-    String line = null;
+    String line;
     while ((line = reader.readLine()) != null) {
-      println(line);
+      println("[PYTHON STDOUT] " + line);
     }
 
-    // Leer el JSON generado
-    JSONObject result = loadJSONObject("salida.json");
-    println("Resultado del análisis:");
-    println(result.toString());
+    BufferedReader errorReader = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+    while ((line = errorReader.readLine()) != null) {
+      println("[PYTHON STDERR] " + line);
+    }
+
+    int exitCode = p.waitFor();
+    println("Proceso Python finalizado con código: " + exitCode);
+
+    File f = new File(sketchPath("playlist_tracks.json"));
+    if (f.exists()) {
+      JSONObject result = loadJSONObject(f.getAbsolutePath());
+      println("Resultado del análisis JSON:");
+      println(result.toString());
+    } else {
+      println("No se encontró el archivo playlist_tracks.json después de ejecutar el script.");
+    }
 
   } catch (Exception e) {
     e.printStackTrace();
   }
-}
-
-void draw(){
 }
