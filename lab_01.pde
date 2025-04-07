@@ -75,9 +75,12 @@ void setup() {
       println("artists.txt no se encontró.");
     }*/
     
+    crearArtistsTxt();
+    
     artistaMayorCanciones();
     artistaMasPopular();
     cancionesMayorDuracionPromedio();
+    obtenerArtistas();
 
   } catch (Exception e) {
     e.printStackTrace();

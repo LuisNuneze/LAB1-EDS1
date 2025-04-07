@@ -68,20 +68,4 @@ if __name__ == "__main__":
     print(f"Archivo tracks.txt creado con éxito en {tracks_txt_path}")
 
     # Archivo 2: Artistas y sus canciones con popularidad
-    artist_map = {}
-    for t in tracks:
-        track_name_clean = t["track_name"].replace(",", "")
-        popularity = t["popularity"]
-        track_with_popularity = f"{track_name_clean}:{popularity}"
-
-        for artist in t["artists"]:
-            if artist not in artist_map:
-                artist_map[artist] = []
-            artist_map[artist].append(track_with_popularity)
-
-    artists_txt_path = os.path.join(base_path, "artists.txt")
-    with open(artists_txt_path, "w", encoding="utf-8") as f:
-        for artist, canciones in artist_map.items():
-            canciones_linea = ";".join(canciones)
-            f.write(f"{artist},{canciones_linea}\n")
-    print(f"Archivo artists.txt creado con éxito en {artists_txt_path}")
+    
