@@ -1,21 +1,21 @@
-Lady Gaga,Disease;Abracadabra;Garden Of Eden;Perfect Celebrity;Vanish Into You;Killah (feat. Gesaffelstein);Zombieboy;LoveDrug;How Bad Do U Want Me;Don't Call Tonight;Shadow Of A Man;The Beast;Blade Of Grass;Die With A Smile;Dance In The Dark;I Like It Rough;Sinner’s Prayer;Enigma;ARTPOP;Smile;Electric Chapel;Good Morning;Get Happy (2024);Oh, When The Saints;World On A String;If My Friends Could See Me Now;That's Entertainment;The Joker;Folie à Deux;Gonna Build A Mountain;Close To You;Happy Mistake;That's Life;Sweet Sounds Of Heaven (feat. Lady Gaga);Hold My Hand;Fashion;Alice;Stupid Love;Rain On Me (with Ariana Grande);Free Woman;Fun Tonight;911;Plastic Doll;Sour Candy (with BLACKPINK);Replay;Sine From Above (with Elton John);1000 Doves;Babylon;Just Dance;LoveGame;Paparazzi;Poker Face;Eh, Eh (Nothing Else I Can Say);Beautiful, Dirty, Rich;The Fame;Money Honey;Starstruck;Boys Boys Boys;Paper Gangsta;Brown Eyes;Summerboy;Disco Heaven;Bad Romance;Alejandro;Monster;Speechless;Telephone;So Happy I Could Die;Teeth;Video Phone (feat. Lady Gaga);Marry The Night;Born This Way;Government Hooker;Judas;Americano;Hair;ScheiBe;Bloody Mary;Black Jesus + Amen Fashion;Bad Kids;Fashion Of His Love;Highway Unicorn (Road To Love);Heavy Metal Lover;The Queen;You And I;The Edge Of Glory;Aura;Venus;G.U.Y.;Sexxx Dreams;Jewels N' Drugs;MANiCURE;Do What U Want;Swine;Donatella;Fashion!;Mary Jane Holland;Dope;Gypsy;Applause;Til It Happens To You;Diamond Heart;A-YO;Joanne;John Wayne;Dancin' In Circles;Perfect Illusion;Million Reasons;Come To Mama;Hey Girl;Angel Down;Grigio Girls;Just Another Day;The Cure;Don't Let Me Be Misunderstood (feat. Lady Gaga);I Want Your Love;La Vie En Rose;Shallow - Radio Edit;Music To My Eyes;Diggin' My Grave;Always Remember Us This Way;Look What I Found;Heal Me;I Don't Know What Love Is;Is That Alright?;Why Did You Do That?;Hair Body Face;Before I Cry;I'll Never Love - Extended Version - Radio Edit;Your Song;Love Me Right;1000 Doves (Piano Demo)
-Gesaffelstein,Killah (feat. Gesaffelstein)
-Bruno Mars,Die With A Smile
-The Rolling Stones,Sweet Sounds Of Heaven (feat. Lady Gaga)
-Ariana Grande,Rain On Me (with Ariana Grande)
-BLACKPINK,Sour Candy (with BLACKPINK)
-Elton John,Sine From Above (with Elton John)
-Colby O'Donis,Just Dance
-Space Cowboy,Starstruck
-Flo Rida,Starstruck
-Beyoncé,Telephone;Video Phone (feat. Lady Gaga)
-William Burke,Video Phone (feat. Lady Gaga)
-T.I.,Jewels N' Drugs
-Too $hort,Jewels N' Drugs
-Twista,Jewels N' Drugs
-Christina Aguilera,Do What U Want
-Florence Welch,Hey Girl
-Brian Newman,Don't Let Me Be Misunderstood (feat. Lady Gaga)
-Nile Rodgers,I Want Your Love
-CHIC,I Want Your Love
-Bradley Cooper,Shallow - Radio Edit;Music To My Eyes;Diggin' My Grave;I Don't Know What Love Is
+Lady Gaga,Disease:82;Abracadabra:87;Garden Of Eden:87;Perfect Celebrity:82;Vanish Into You:85;Killah (feat. Gesaffelstein):81;Zombieboy:83;LoveDrug:82;How Bad Do U Want Me:85;Don't Call Tonight:80;Shadow Of A Man:84;The Beast:78;Blade Of Grass:77;Die With A Smile:89;Dance In The Dark:38;I Like It Rough:51;Sinner’s Prayer:50;Enigma:55;ARTPOP:62;Smile:46;Electric Chapel:45;Good Morning:47;Get Happy (2024):45;Oh When The Saints:46;World On A String:47;If My Friends Could See Me Now:45;That's Entertainment:45;The Joker:52;Folie à Deux:47;Gonna Build A Mountain:44;Close To You:59;Happy Mistake:60;That's Life:49;Sweet Sounds Of Heaven (feat. Lady Gaga):44;Hold My Hand:74;Fashion:0;Alice:63;Stupid Love:69;Rain On Me (with Ariana Grande):74;Free Woman:61;Fun Tonight:54;911:67;Plastic Doll:54;Sour Candy (with BLACKPINK):65;Replay:62;Sine From Above (with Elton John):53;1000 Doves:53;Babylon:61;Just Dance:79;LoveGame:73;Paparazzi:75;Poker Face:80;Eh Eh (Nothing Else I Can Say):56;Beautiful Dirty Rich:55;The Fame:53;Money Honey:55;Starstruck:59;Boys Boys Boys:53;Paper Gangsta:50;Brown Eyes:48;Summerboy:60;Disco Heaven:49;Bad Romance:46;Alejandro:45;Monster:42;Speechless:34;Telephone:45;So Happy I Could Die:36;Teeth:32;Video Phone (feat. Lady Gaga):30;Marry The Night:46;Born This Way:70;Government Hooker:67;Judas:55;Americano:63;Hair:49;ScheiBe:60;Bloody Mary:70;Black Jesus + Amen Fashion:41;Bad Kids:42;Fashion Of His Love:41;Highway Unicorn (Road To Love):41;Heavy Metal Lover:65;The Queen:39;You And I:50;The Edge Of Glory:49;Aura:59;Venus:66;G.U.Y.:70;Sexxx Dreams:59;Jewels N' Drugs:53;MANiCURE:56;Do What U Want:65;Swine:56;Donatella:59;Fashion!:55;Mary Jane Holland:54;Dope:50;Gypsy:54;Applause:79;Til It Happens To You:50;Diamond Heart:52;A-YO:54;Joanne:58;John Wayne:59;Dancin' In Circles:53;Perfect Illusion:63;Million Reasons:77;Come To Mama:47;Hey Girl:56;Angel Down:49;Grigio Girls:48;Just Another Day:47;The Cure:65;Don't Let Me Be Misunderstood (feat. Lady Gaga):39;I Want Your Love:52;La Vie En Rose:44;Shallow - Radio Edit:72;Music To My Eyes:55;Diggin' My Grave:44;Always Remember Us This Way:85;Look What I Found:48;Heal Me:43;I Don't Know What Love Is:45;Is That Alright?:48;Why Did You Do That?:44;Hair Body Face:53;Before I Cry:46;I'll Never Love - Extended Version - Radio Edit:50;Your Song:52;Love Me Right:0;1000 Doves (Piano Demo):0
+Gesaffelstein,Killah (feat. Gesaffelstein):81
+Bruno Mars,Die With A Smile:89
+The Rolling Stones,Sweet Sounds Of Heaven (feat. Lady Gaga):44
+Ariana Grande,Rain On Me (with Ariana Grande):74
+BLACKPINK,Sour Candy (with BLACKPINK):65
+Elton John,Sine From Above (with Elton John):53
+Colby O'Donis,Just Dance:79
+Space Cowboy,Starstruck:59
+Flo Rida,Starstruck:59
+Beyoncé,Telephone:45;Video Phone (feat. Lady Gaga):30
+William Burke,Video Phone (feat. Lady Gaga):30
+T.I.,Jewels N' Drugs:53
+Too $hort,Jewels N' Drugs:53
+Twista,Jewels N' Drugs:53
+Christina Aguilera,Do What U Want:65
+Florence Welch,Hey Girl:56
+Brian Newman,Don't Let Me Be Misunderstood (feat. Lady Gaga):39
+Nile Rodgers,I Want Your Love:52
+CHIC,I Want Your Love:52
+Bradley Cooper,Shallow - Radio Edit:72;Music To My Eyes:55;Diggin' My Grave:44;I Don't Know What Love Is:45

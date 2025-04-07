@@ -31,7 +31,7 @@ def get_playlist_tracks(playlist_id, token):
             track = item.get("track")
             if track:
                 track_info = {
-                    "track_name": track.get("name"),
+                    "track_name": track.get("name").replace(",", ""),
                     "artists": [artist["name"] for artist in track.get("artists", [])],
                     "album": track.get("album", {}).get("name"),
                     "duration_ms": track.get("duration_ms"),
@@ -63,17 +63,21 @@ if __name__ == "__main__":
     tracks_txt_path = os.path.join(base_path, "tracks.txt")
     with open(tracks_txt_path, "w", encoding="utf-8") as f:
         for t in tracks:
-            artists = ";".join(t["artists"])  # Por si hay más de un artista
+            artists = ";".join(t["artists"])
             f.write(f"{t['track_name']},{artists},{t['album']},{t['duration_ms']},{t['popularity']},{t['track_url']}\n")
     print(f"Archivo tracks.txt creado con éxito en {tracks_txt_path}")
 
-    # Archivo 2: Artistas y sus canciones
+    # Archivo 2: Artistas y sus canciones con popularidad
     artist_map = {}
     for t in tracks:
+        track_name_clean = t["track_name"].replace(",", "")
+        popularity = t["popularity"]
+        track_with_popularity = f"{track_name_clean}:{popularity}"
+
         for artist in t["artists"]:
             if artist not in artist_map:
                 artist_map[artist] = []
-            artist_map[artist].append(t["track_name"])
+            artist_map[artist].append(track_with_popularity)
 
     artists_txt_path = os.path.join(base_path, "artists.txt")
     with open(artists_txt_path, "w", encoding="utf-8") as f:
@@ -81,5 +85,3 @@ if __name__ == "__main__":
             canciones_linea = ";".join(canciones)
             f.write(f"{artist},{canciones_linea}\n")
     print(f"Archivo artists.txt creado con éxito en {artists_txt_path}")
-
-

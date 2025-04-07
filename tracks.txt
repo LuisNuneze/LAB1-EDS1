@@ -21,7 +21,7 @@ Smile,Lady Gaga,Harlequin,218721,46,https://open.spotify.com/track/38ILZqA8DlkbK
 Electric Chapel,Lady Gaga,Born This Way (Special Edition),252240,45,https://open.spotify.com/track/5ovLCLFRWKBThz15ntjE8d
 Good Morning,Lady Gaga,Harlequin,166300,47,https://open.spotify.com/track/6RyJt2SvLFghIDe1eCviD9
 Get Happy (2024),Lady Gaga,Harlequin,191700,45,https://open.spotify.com/track/2YQ0DrIFS90FEK8T4JOa8W
-Oh, When The Saints,Lady Gaga,Harlequin,222603,46,https://open.spotify.com/track/2Qt1GqEOR6gfBCNTZv9Q8P
+Oh When The Saints,Lady Gaga,Harlequin,222603,46,https://open.spotify.com/track/2Qt1GqEOR6gfBCNTZv9Q8P
 World On A String,Lady Gaga,Harlequin,157863,47,https://open.spotify.com/track/1CmyFUdrzcI2TldyJzOHSb
 If My Friends Could See Me Now,Lady Gaga,Harlequin,161733,45,https://open.spotify.com/track/0I27tCo8rexgdYnhkSaL7k
 That's Entertainment,Lady Gaga,Harlequin,249466,45,https://open.spotify.com/track/2zOSxEAk90JTKYNHqE8LXc
@@ -50,8 +50,8 @@ Just Dance,Lady Gaga;Colby O'Donis,The Fame,241933,79,https://open.spotify.com/t
 LoveGame,Lady Gaga,The Fame,216333,73,https://open.spotify.com/track/0TcJ7QWpggdSg8t0fHThHm
 Paparazzi,Lady Gaga,The Fame,208306,75,https://open.spotify.com/track/7Hqig8kp32q2Ire3ECQvWM
 Poker Face,Lady Gaga,The Fame,237200,80,https://open.spotify.com/track/5R8dQOPq8haW94K7mgERlO
-Eh, Eh (Nothing Else I Can Say),Lady Gaga,The Fame,175360,56,https://open.spotify.com/track/4CIu6ip0JlQeCqLLfoqlDW
-Beautiful, Dirty, Rich,Lady Gaga,The Fame,172413,55,https://open.spotify.com/track/3qrQtMmkuV79LMGfsGDHRf
+Eh Eh (Nothing Else I Can Say),Lady Gaga,The Fame,175360,56,https://open.spotify.com/track/4CIu6ip0JlQeCqLLfoqlDW
+Beautiful Dirty Rich,Lady Gaga,The Fame,172413,55,https://open.spotify.com/track/3qrQtMmkuV79LMGfsGDHRf
 The Fame,Lady Gaga,The Fame,222106,53,https://open.spotify.com/track/25pWYL5848CIMh3OfnDroM
 Money Honey,Lady Gaga,The Fame,170293,55,https://open.spotify.com/track/5ww65ORP2faNi9ygUjxwId
 Starstruck,Lady Gaga;Space Cowboy;Flo Rida,The Fame,217120,59,https://open.spotify.com/track/2DLsZCx5UEqVB3vY3kZWWB

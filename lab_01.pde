@@ -5,14 +5,21 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
 
+
 String pythonExecutable;
 
 void setup() {
   String playlistId = "2FvRD74Yopb6oqxLNcEZBh";
-  
-  BufferedWriter writer = new BufferedWriter(".\\playlist_id.txt");
-  saveStrings("playlist_id.txt", new String[]{playlistId});
-  println("ID guardado en playlist_id.txt.");
+  String filePath = sketchPath("playlist_id.txt");
+
+  try {
+    BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
+    writer.write(playlistId);
+    writer.close();
+    println("ID guardado en playlist_id.txt.");
+  } catch (Exception e) {
+    System.out.println(e);
+  }
 
   // Leer ruta de Python
   String[] pathLines = loadStrings("python_path.txt");
@@ -43,14 +50,34 @@ void setup() {
     int exitCode = p.waitFor();
     println("Proceso Python finalizado con código: " + exitCode);
 
-    File f = new File(sketchPath("playlist_tracks.json"));
-    if (f.exists()) {
-      JSONObject result = loadJSONObject(f.getAbsolutePath());
-      println("Resultado del análisis JSON:");
-      println(result.toString());
+    // Cargar tracks.txt
+    /*
+    File tracksFile = new File(sketchPath("tracks.txt"));
+    if (tracksFile.exists()) {
+      println("Contenido de tracks.txt:");
+      String[] tracks = loadStrings(tracksFile.getAbsolutePath());
+      for (String t : tracks) {
+        println(t);
+      }
     } else {
-      println("No se encontró el archivo playlist_tracks.json después de ejecutar el script.");
+      println("tracks.txt no se encontró.");
     }
+
+    // Cargar artists.txt
+    File artistsFile = new File(sketchPath("artists.txt"));
+    if (artistsFile.exists()) {
+      println("Contenido de artists.txt:");
+      String[] artists = loadStrings(artistsFile.getAbsolutePath());
+      for (String a : artists) {
+        println(a);
+      }
+    } else {
+      println("artists.txt no se encontró.");
+    }*/
+    
+    artistaMayorCanciones();
+    artistaMasPopular();
+    cancionesMayorDuracionPromedio();
 
   } catch (Exception e) {
     e.printStackTrace();
