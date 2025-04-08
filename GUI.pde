@@ -121,6 +121,7 @@ void mousePressed() {
   button_1.click();
   button_2.click();
   button_3.click();
+  button_4.click();
 }
 
 void mouseReleased() {
@@ -205,11 +206,11 @@ String limitar(String contenido, int max_lineas) {
 
 // CLASES //
 
-abstract class ButtonBS {
+class Button {
   int x, y, w, h;
   String label;
 
-  ButtonBS(int x, int y, int w, int h, String label) {
+  Button(int x, int y, int w, int h, String label) {
     this.x = x;
     this.y = y;
     this.w = w;
@@ -250,13 +251,10 @@ abstract class ButtonBS {
     }
   }
   
-  abstract void run();
-}
-
-class Button extends ButtonBS{
-  Button(int x, int y, int w, int h, String label) {
-    super(x, y, w, h, label);
+  void run(){
+    switch(label){
+      case "Buscar":
+        obtenerCrearArchivos();
+    }
   }
-  
-  
 }

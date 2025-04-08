@@ -1,5 +1,5 @@
 void obtenerCrearArchivos() {
-  String playlistId = input_text;
+  String playlistId = input_text.trim();
   String filePath = sketchPath("playlist_id.txt");
   try {
     BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
