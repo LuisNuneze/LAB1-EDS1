@@ -127,3 +127,14 @@ public String cortarDesdeLetra(String cadena, String lt) {
   }
   return cadena;
 }
+
+//Para obtener el contenido del portapapeles
+String obtener_texto_portapapeles() {
+  Clipboard portapapeles = Toolkit.getDefaultToolkit().getSystemClipboard();
+  try {
+    return (String) portapapeles.getData(DataFlavor.stringFlavor);
+  } catch (Exception e) {
+    println("Error al acceder al portapapeles: " + e);
+    return "";
+  }
+}
