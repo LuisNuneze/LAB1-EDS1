@@ -66,11 +66,6 @@ void obtenerCrearArchivos() {
      }*/
 
     crearArtistsTxt();
-
-    artistaMayorCanciones();
-    artistaMasPopular();
-    cancionesMayorDuracionPromedio();
-    obtenerArtistas();
   }
   catch (Exception e) {
     e.printStackTrace();

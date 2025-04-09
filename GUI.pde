@@ -1,11 +1,5 @@
 // Texto de ejemplo para mostrar en ventana desplazable
-String original_text = "Ejemplo largo desplazable v y h."
-    + "Haz clic y arrastra en cualquier dir para mover."
-    + "Simula una ventana con parte visible del cont.\n"
-    + "El txt puede ser largo.\n\n"
-    + "L5\nL6\nL7\nL8\nL9\nL10\nL11\nL12\nL13\nL14\n"
-    + "L15\nL16\nL17\nL18\nL19\nL20\nL21\nL22\nL23\nL24\n"
-    + "L15\nL16\nL17\nL18\nL19\nL20\nL21\nL22\nL23\nL24\n";
+String original_text = "Bienvenido, introduce un ID\npara comenzar";
 
 // Limitamos el texto a 90 líneas
 String visible_text = limitar(original_text, 90);
@@ -29,7 +23,7 @@ float initial_mouse_y = 0;
 boolean is_dragging = false;
 
 // Botones
-Button button_1, button_2, button_3, button_4;
+Button button_art_max, button_2, button_3, button_4;
 
 // Colores usados en la interfaz
 color color_highlight = color(29, 185, 84);
@@ -37,7 +31,7 @@ color color_default = color(80);
 color color_hover = color(0);
 color color_background = color(30);
 
-void inicializarGUI(){
+void inicializarGUI() {
   // Definimos la zona del texto desplazable
   scroll_window_x = width / 2;
   scroll_window_y = 150;
@@ -45,13 +39,13 @@ void inicializarGUI(){
   scroll_window_height = height - (scroll_window_y + 30);
 
   // Creamos botones
-  button_1 = new Button(40, 200, width / 2 - 80, 50, "B1");
-  button_2 = new Button(40, 280, width / 2 - 80, 50, "B2");
-  button_3 = new Button(40, 360, width / 2 - 80, 50, "B3");
+  button_art_max = new Button(40, 200, width / 2 - 80, 50, "Destacados");
+  button_2 = new Button(40, 280, width / 2 - 80, 50, "Graficas");
+  button_3 = new Button(40, 360, width / 2 - 80, 50, "Mas");
   button_4 = new Button(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar");
 }
 
-void mostrarGUI(){
+void mostrarGUI() {
   background(color_background);
 
   // Marco de ventana desplazable
@@ -76,7 +70,7 @@ void mostrarGUI(){
   rect(scroll_window_x, scroll_window_y + scroll_window_height, scroll_window_width, height - (scroll_window_y + scroll_window_height));
 
   // Mostrar botones
-  button_1.display();
+  button_art_max.display();
   button_2.display();
   button_3.display();
   button_4.display();
@@ -118,7 +112,7 @@ void mousePressed() {
     is_dragging = true;
   }
 
-  button_1.click();
+  button_art_max.click();
   button_2.click();
   button_3.click();
   button_4.click();
@@ -150,7 +144,7 @@ void keyTyped() {
     }
   } else if (key == ENTER) {
     button_4.run();
-  } else if (key == 'V'){
+  } else if (key == 'V') {
     input_text = obtener_texto_portapapeles();
   }
 }
@@ -186,11 +180,18 @@ void limit_scroll() {
   }
 
   float total_text_height = lines.length * 24;
-  float max_x_offset = max_text_width - scroll_window_width + 60;
-  float max_y_offset = total_text_height - scroll_window_height + 60;
+  
+  float max_y_offset = max(0, total_text_height - scroll_window_height);
 
-  text_offset_y = constrain(text_offset_y, -(max_y_offset + 30), 20);
-  text_offset_x = constrain(text_offset_x, -(max_x_offset + 30), 20);
+  // Aplica el límite al desplazamiento horizontal
+  float vertical_padding = 20;
+  text_offset_y = constrain(text_offset_y, -max_y_offset - vertical_padding, vertical_padding);
+  
+  float max_x_offset = max(0, max_text_width - scroll_window_width); // Por si el texto es más corto
+
+  // Aplica el límite al desplazamiento horizontal
+  float horizontal_padding = 20;
+  text_offset_x = constrain(text_offset_x, -max_x_offset - horizontal_padding, horizontal_padding);
 }
 
 // Devuelve las primeras N líneas del texto
@@ -250,11 +251,14 @@ class Button {
       run();
     }
   }
-  
-  void run(){
-    switch(label){
-      case "Buscar":
-        obtenerCrearArchivos();
+
+  void run() {
+    switch(this.label) {
+    case "Buscar":
+      obtenerCrearArchivos();
+      break;
+    case "Destacados":
+      obtenerDestacados();
     }
   }
 }

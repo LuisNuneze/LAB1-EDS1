@@ -1,5 +1,10 @@
+//Metodos para los botones
+void obtenerDestacados(){
+  visible_text = limitar(artistaMayorCanciones() + "\n" + artistaMasPopular() + "\n" + cancionesMayorDuracionPromedio(), 90);
+}
+
 //Metodo para hallar el artista con mayor canciones en la playlist
-public void artistaMayorCanciones() {
+public String artistaMayorCanciones() {
   String filePath = sketchPath("artists.txt");
   BufferedReader reader = null;
   String line[], registro, artista_mayor = "", canciones[];
@@ -26,12 +31,11 @@ public void artistaMayorCanciones() {
       println(e);
     }
   }
-
-  println(artista_mayor + ", "+canciones_mayor);
+  return artista_mayor + ", "+canciones_mayor;
 }
 
 //Metodo para hallar el artista de mayor popularidad en la playlist
-public void artistaMasPopular() {
+public String artistaMasPopular() {
   String filePath = sketchPath("artists.txt");
   BufferedReader reader = null;
   String line[], registro, artista_mayor = "", canciones[];
@@ -65,11 +69,11 @@ public void artistaMasPopular() {
       println(e);
     }
   }
-  println("Artista mas popular:"+artista_mayor);
+  return "Artista mas popular:"+artista_mayor;
 }
 
 // Metodo para hallar la canciones con duración mayor al promedio
-public void cancionesMayorDuracionPromedio() {
+public String cancionesMayorDuracionPromedio() {
   String filePath = sketchPath("tracks.txt");
   BufferedReader reader = null;
   String line[], registro, artista_mayor = "", canciones[];
@@ -88,16 +92,17 @@ public void cancionesMayorDuracionPromedio() {
     
     // Sacamos las canciones con mayor duración al promedio
     println("Canciones con mayor duración al promedio");
+    String canciones_mayores = "";
     reader = new BufferedReader(new FileReader(filePath));
     while ((registro = reader.readLine()) != null) {
       line = registro.split(",");
       duracion = Integer.parseInt(line[3]);
       if(duracion > promedio){
-        println(line[0]+" ("+line[3]+")");
+        canciones_mayores += line[0]+" ("+line[3]+")";
       }
       
     }
-    print(promedio+"\n");
+    return canciones_mayores;
   }
 
   catch (Exception e) {
@@ -111,6 +116,7 @@ public void cancionesMayorDuracionPromedio() {
       println(e);
     }
   }
+  return null;
 }
 
 //Funciones auxiliares
