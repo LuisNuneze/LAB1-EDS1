@@ -98,7 +98,7 @@ public String cancionesMayorDuracionPromedio() {
       line = registro.split(",");
       duracion = Integer.parseInt(line[3]);
       if(duracion > promedio){
-        canciones_mayores += line[0]+" ("+line[3]+")";
+        canciones_mayores += line[0]+" ("+line[3]+")"+"\n";
       }
       
     }

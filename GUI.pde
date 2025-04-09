@@ -23,7 +23,8 @@ float initial_mouse_y = 0;
 boolean is_dragging = false;
 
 // Botones
-Button button_art_max, button_2, button_3, button_4;
+Button button_art_max, button_graficas, button_mas, button_buscar; // Funcionalidades
+Button button_quit; //Quitar - retroceder
 
 // Colores usados en la interfaz
 color color_highlight = color(29, 185, 84);
@@ -39,10 +40,17 @@ void inicializarGUI() {
   scroll_window_height = height - (scroll_window_y + 30);
 
   // Creamos botones
-  button_art_max = new Button(40, 200, width / 2 - 80, 50, "Destacados");
-  button_2 = new Button(40, 280, width / 2 - 80, 50, "Graficas");
-  button_3 = new Button(40, 360, width / 2 - 80, 50, "Mas");
-  button_4 = new Button(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar");
+
+  //Funcionalidades
+  button_art_max = new Button(40, 200, width / 2 - 80, 50, "Destacados", () -> obtenerDestacados());
+  button_graficas = new Button(40, 280, width / 2 - 80, 50, "Graficas", () -> println("en proceso"));
+  button_mas = new Button(40, 360, width / 2 - 80, 50, "Mas", () -> println("en proceso"));
+  button_buscar = new Button(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar", () -> obtenerCrearArchivos());
+
+  //Quitar
+  float w_quit =40, h_quit = 30;
+  float x_quit =input_box_x +input_box_width - (w_quit+10), y_quit = input_box_y + 5;
+  button_quit = new Button(x_quit, y_quit, w_quit, h_quit, "X", () -> println("en processing"));
 }
 
 void mostrarGUI() {
@@ -69,11 +77,6 @@ void mostrarGUI() {
   rect(scroll_window_x, 0, scroll_window_width, scroll_window_y);
   rect(scroll_window_x, scroll_window_y + scroll_window_height, scroll_window_width, height - (scroll_window_y + scroll_window_height));
 
-  // Mostrar botones
-  button_art_max.display();
-  button_2.display();
-  button_3.display();
-  button_4.display();
 
   // Cuadro de entrada de texto estilo consola
   fill(color_default);
@@ -86,7 +89,17 @@ void mostrarGUI() {
   fill(color_default);
   rect(input_box_x, input_box_y, input_box_width, input_box_height, 10);
   fill(color_highlight);
+
+  // Mostrar botones
+  button_art_max.display();
+  button_graficas.display();
+  button_mas.display();
+  button_buscar.display();
+  button_quit.display();
   textAlign(LEFT, TOP);
+
+
+
 
   String[] lines = input_text.split("\n");
   int line_count = min(lines.length, 2);
@@ -113,9 +126,9 @@ void mousePressed() {
   }
 
   button_art_max.click();
-  button_2.click();
-  button_3.click();
-  button_4.click();
+  button_graficas.click();
+  button_mas.click();
+  button_buscar.click();
 }
 
 void mouseReleased() {
@@ -143,7 +156,7 @@ void keyTyped() {
       input_text += key;
     }
   } else if (key == ENTER) {
-    button_4.run();
+    button_buscar.execute();
   } else if (key == 'V') {
     input_text = obtener_texto_portapapeles();
   }
@@ -180,13 +193,13 @@ void limit_scroll() {
   }
 
   float total_text_height = lines.length * 24;
-  
+
   float max_y_offset = max(0, total_text_height - scroll_window_height);
 
   // Aplica el límite al desplazamiento horizontal
   float vertical_padding = 20;
   text_offset_y = constrain(text_offset_y, -max_y_offset - vertical_padding, vertical_padding);
-  
+
   float max_x_offset = max(0, max_text_width - scroll_window_width); // Por si el texto es más corto
 
   // Aplica el límite al desplazamiento horizontal
@@ -203,62 +216,4 @@ String limitar(String contenido, int max_lineas) {
     resultado += lineas[i] + "\n";
   }
   return resultado;
-}
-
-// CLASES //
-
-class Button {
-  int x, y, w, h;
-  String label;
-
-  Button(int x, int y, int w, int h, String label) {
-    this.x = x;
-    this.y = y;
-    this.w = w;
-    this.h = h;
-    this.label = label;
-  }
-
-  void display() {
-    fill(0, 100);
-    noStroke();
-    rect(x + 4, y + 4, w, h, 15);
-
-    if (is_hovered(mouseX, mouseY)) {
-      fill(color_hover);
-    } else {
-      fill(color_default);
-    }
-
-    stroke(color_highlight);
-    rect(x, y, w, h, 15);
-
-    fill(color_highlight);
-    textAlign(CENTER, CENTER);
-    text(label, x + w / 2, y + h / 2);
-  }
-
-  boolean is_pressed(int mx, int my) {
-    return mx >= x && mx <= x + w && my >= y && my <= y + h;
-  }
-
-  boolean is_hovered(int mx, int my) {
-    return is_pressed(mx, my);
-  }
-
-  void click() {
-    if (is_pressed(mouseX, mouseY)) {
-      run();
-    }
-  }
-
-  void run() {
-    switch(this.label) {
-    case "Buscar":
-      obtenerCrearArchivos();
-      break;
-    case "Destacados":
-      obtenerDestacados();
-    }
-  }
 }
