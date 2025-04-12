@@ -23,8 +23,8 @@ float initial_mouse_y = 0;
 boolean is_dragging = false;
 
 // Botones
-Button button_art_max, button_graficas, button_mas, button_buscar; // Funcionalidades
-Button button_quit; //Quitar - retroceder
+ButtonText button_art_max, button_graficas, button_mas, button_buscar; // Funcionalidades
+ButtonIcon button_quit; //Quitar - retroceder
 
 // Colores usados en la interfaz
 color color_highlight = color(29, 185, 84);
@@ -42,15 +42,15 @@ void inicializarGUI() {
   // Creamos botones
 
   //Funcionalidades
-  button_art_max = new Button(40, 200, width / 2 - 80, 50, "Destacados", () -> obtenerDestacados());
-  button_graficas = new Button(40, 280, width / 2 - 80, 50, "Graficas", () -> println("en proceso"));
-  button_mas = new Button(40, 360, width / 2 - 80, 50, "Mas", () -> println("en proceso"));
-  button_buscar = new Button(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar", () -> obtenerCrearArchivos());
+  button_art_max = new ButtonText(40, 200, width / 2 - 80, 50, "Destacados", () -> obtenerDestacados());
+  button_graficas = new ButtonText(40, 280, width / 2 - 80, 50, "Graficas", () -> println("en proceso"));
+  button_mas = new ButtonText(40, 360, width / 2 - 80, 50, "Mas", () -> println("en proceso"));
+  button_buscar = new ButtonText(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar", () -> obtenerCrearArchivos());
 
   //Quitar
   float w_quit =40, h_quit = 30;
   float x_quit =input_box_x +input_box_width - (w_quit+10), y_quit = input_box_y + 5;
-  button_quit = new Button(x_quit, y_quit, w_quit, h_quit, "X", () -> println("en processing"));
+  button_quit = new ButtonIcon(x_quit, y_quit, w_quit, h_quit, () -> input_text = "", 1);
 }
 
 void mostrarGUI() {
@@ -79,6 +79,7 @@ void mostrarGUI() {
 
 
   // Cuadro de entrada de texto estilo consola
+  textAlign(CENTER, CENTER);
   fill(color_default);
   stroke(color_highlight);
   strokeWeight(1);
@@ -89,13 +90,16 @@ void mostrarGUI() {
   fill(color_default);
   rect(input_box_x, input_box_y, input_box_width, input_box_height, 10);
   fill(color_highlight);
+  
 
   // Mostrar botones
   button_art_max.display();
   button_graficas.display();
   button_mas.display();
   button_buscar.display();
-  button_quit.display();
+  if(input_text != ""){
+      button_quit.display();
+  }
   textAlign(LEFT, TOP);
 
 
@@ -129,6 +133,7 @@ void mousePressed() {
   button_graficas.click();
   button_mas.click();
   button_buscar.click();
+  button_quit.click();
 }
 
 void mouseReleased() {
