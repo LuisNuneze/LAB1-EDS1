@@ -24,12 +24,16 @@ boolean is_dragging = false;
 
 // Botones
 ButtonText button_art_max, button_graficas, button_mas, button_buscar; // Funcionalidades
-ButtonIcon button_quit; //Quitar - retroceder
+ButtonText button_ordenar, button_ver, button_buscar_archivo, button_eliminar; // Funcionalidades mas
+ButtonIcon button_quit, button_retroceder; //Quitar - retroceder
+
+// Ventanas de noticia
+NoticeWindow notice_buscar_error, notice_buscar_exito;
 
 // Colores usados en la interfaz
 color color_highlight = color(29, 185, 84);
-color color_default = color(80);
-color color_hover = color(0);
+color color_default = color(80, 80, 80, 255); // R, G, B, A
+color color_hover = color(0, 0, 0, 255);      // Negro total con visibilidad
 color color_background = color(30);
 
 void inicializarGUI() {
@@ -44,13 +48,34 @@ void inicializarGUI() {
   //Funcionalidades
   button_art_max = new ButtonText(40, 200, width / 2 - 80, 50, "Destacados", () -> obtenerDestacados());
   button_graficas = new ButtonText(40, 280, width / 2 - 80, 50, "Graficas", () -> println("en proceso"));
-  button_mas = new ButtonText(40, 360, width / 2 - 80, 50, "Mas", () -> println("en proceso"));
+  button_mas = new ButtonText(40, 360, width / 2 - 80, 50, "Mas", () -> {
+    is_mas = true;
+    aparecerMasOpciones();
+  }
+  );
   button_buscar = new ButtonText(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar", () -> obtenerCrearArchivos());
+
+  button_ordenar = new ButtonText(40, 700, width / 2 - 80, 50, "Ordenar", () -> println("en proceso"));
+  button_ver = new ButtonText(40, 800, width / 2 - 80, 50, "Ver", () -> println("en proceso"));
+  button_buscar_archivo = new ButtonText(40, 900, width / 2 - 80, 50, "Buscar", () -> println("en proceso"));
+  button_eliminar = new ButtonText(40, 1000, width / 2 - 80, 50, "Eliminar", () -> println("en proceso"));
+
+
 
   //Quitar
   float w_quit =40, h_quit = 30;
   float x_quit =input_box_x +input_box_width - (w_quit+10), y_quit = input_box_y + 5;
   button_quit = new ButtonIcon(x_quit, y_quit, w_quit, h_quit, () -> input_text = "", 1);
+  
+  float w_rt =40, h_rt = 30;
+  float x_rt = 30, y_rt = 510;
+  button_retroceder = new ButtonIcon(x_rt, y_rt, w_rt, h_rt, () -> is_mas = false, 2);
+  button_retroceder.setColorDf(color(red(button_retroceder.getColorDf()), green(button_retroceder.getColorDf()), blue(button_retroceder.getColorDf()), 1));
+  button_retroceder.setColorHl(color(red(button_retroceder.getColorHl()), green(button_retroceder.getColorHl()), blue(button_retroceder.getColorHl()), 1));
+
+  // Creamos ventanas de noticias
+  notice_buscar_error = new NoticeWindow(175, -55, 350, 45, "ERROR 404: Playlist no encontrada", color(255, 36, 36, 150), () -> println("En processing"));
+  notice_buscar_exito = new NoticeWindow(175, -55, 350, 45, "Playlist encontrada existosamente", color(29, 185, 84, 150), () -> println("En processing"));
 }
 
 void mostrarGUI() {
@@ -90,22 +115,38 @@ void mostrarGUI() {
   fill(color_default);
   rect(input_box_x, input_box_y, input_box_width, input_box_height, 10);
   fill(color_highlight);
-  
+
 
   // Mostrar botones
   button_art_max.display();
   button_graficas.display();
   button_mas.display();
   button_buscar.display();
-  if(input_text != ""){
-      button_quit.display();
+  if (input_text != "") {
+    button_quit.display();
+  }
+  if (activeWindow != null) {
+    activeWindow.mostrar();
+  }
+
+  // Mostrar mas botones
+  if (button_art_max.isHide() || is_mas) {
+    aparecerMasOpciones();
+    button_ordenar.display();
+    button_buscar_archivo.display();
+    button_ver.display();
+    button_eliminar.display();
+    button_retroceder.display();
   }
   textAlign(LEFT, TOP);
 
-
-
-
-  String[] lines = input_text.split("\n");
+  String[] lines;
+  if (input_text.length() > 19) {
+    lines = input_text.substring(0, 19).split("\n");
+    lines[0] += "...";
+  } else {
+    lines = input_text.split("\n");
+  }
   int line_count = min(lines.length, 2);
   for (int i = 0; i < line_count; i++) {
     text(lines[i], input_box_x + 10, input_box_y + 10 + i * 24);
@@ -134,6 +175,12 @@ void mousePressed() {
   button_mas.click();
   button_buscar.click();
   button_quit.click();
+  
+  button_ordenar.click();
+  button_ver.click();
+  button_buscar_archivo.click();
+  button_eliminar.click();
+  button_retroceder.click();
 }
 
 void mouseReleased() {
