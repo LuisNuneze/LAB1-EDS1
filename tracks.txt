@@ -1,0 +1,27 @@
+Bring Me To Life,Evanescence,Fallen,235893,88,https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp
+One Step Closer,Linkin Park,Hybrid Theory (Bonus Edition),157333,85,https://open.spotify.com/track/3K4HG9evC7dg3N0R9cYqk4
+Centuries,Fall Out Boy,American Beauty/American Psycho,228360,83,https://open.spotify.com/track/04aAxqtGp5pv12UXAg4pkq
+Re:make,ONE OK ROCK,Zankyō Reference,204493,55,https://open.spotify.com/track/6IghCx6jRj5VHEmXKQH2pR
+What I've Done,Linkin Park,Minutes to Midnight,205226,84,https://open.spotify.com/track/18lR4BzEs7e3qzc0KVkTpU
+In the End,Linkin Park,Hybrid Theory (Bonus Edition),216880,89,https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq
+Taking Over Me,Evanescence,Fallen,228613,60,https://open.spotify.com/track/5j7gLuOsBOyqooruGxX4nx
+Given Up,Linkin Park,Minutes to Midnight,189293,79,https://open.spotify.com/track/1fLlRApgzxWweF1JTf8yM5
+Courtesy Call,Thousand Foot Krutch,The End Is Where We Begin,236898,77,https://open.spotify.com/track/0AOmbw8AwDnwXhHC3OhdVB
+Monster,Skillet,Awake,178013,82,https://open.spotify.com/track/2UREu1Y8CO4jXkbvqAtP7g
+Everybody's Fool,Evanescence,Fallen,195880,72,https://open.spotify.com/track/0tWEB6BxbI48XN79QE1JbT
+Hero,Skillet,Awake,186813,76,https://open.spotify.com/track/4CbKVDZkYKdv69I4bCaKUq
+Numb,Linkin Park,Meteora,187520,89,https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h
+Faint,Linkin Park,Meteora (Bonus Edition),162106,70,https://open.spotify.com/track/7AB0cUXnzuSlAnyHOqmrZr
+My Demons,STARSET,Transmissions (Deluxe Version),288036,74,https://open.spotify.com/track/3Xfg7AegXaDLoD5GOUMf2e
+Rise,Skillet,Rise (Deluxe Edition),260786,65,https://open.spotify.com/track/1W0YS64vF9qgMVLuN76aqg
+Can You Feel My Heart,Bring Me The Horizon,Sempiternal (Expanded Edition),228146,79,https://open.spotify.com/track/0WSa1sucoNRcEeULlZVQXj
+Feel Invincible,Skillet,Unleashed,229933,75,https://open.spotify.com/track/0i8JFpqe9cKwnrcvoNgl1L
+Heavy Is the Crown,Linkin Park,Heavy Is the Crown,167012,77,https://open.spotify.com/track/3fgehc497TFqKH1zBL2YNK
+Rise from the Ashes,Stria,Stria,230466,40,https://open.spotify.com/track/4mSWjPRRXZjBHA2vYoF9GK
+Let Me Hear,Fear and Loathing in Las Vegas,Feeling of Unity,225546,1,https://open.spotify.com/track/5sqkarfxe7UejHTlCtHCLS
+This Fire,Killswitch Engage,As Daylight Dies (Special Edition),189666,66,https://open.spotify.com/track/07ceEXOyS7ghQkyCOycXwP
+Metalingus,Alter Bridge,One Day Remains,259959,69,https://open.spotify.com/track/3UULkHdmLDqBDPmBYltoRE
+Toxicity,System Of A Down,Toxicity,218933,86,https://open.spotify.com/track/0snQkGI5qnAmohLE7jTsTn
+Immortals,Fall Out Boy,American Beauty/American Psycho,189386,77,https://open.spotify.com/track/3Te8uLyit6X3ncNW8Fp3K2
+Last Resort,Papa Roach,Infest,199906,84,https://open.spotify.com/track/5W8YXBz9MTIDyrpYaCg2Ky
+Enemy (with JID) - from the series Arcane League of Legends,Imagine Dragons;JID;Arcane;League of Legends,Enemy (with JID) [from the series Arcane League of Legends],173381,78,https://open.spotify.com/track/1r9xUipOqoNwggBpENDsvJ
