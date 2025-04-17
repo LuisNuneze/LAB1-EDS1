@@ -64,7 +64,7 @@ if __name__ == "__main__":
     with open(tracks_txt_path, "w", encoding="utf-8") as f:
         for t in tracks:
             artists = ";".join(t["artists"])
-            f.write(f"{t['track_name']},{artists.replace(",", "")},{t['album']},{t['duration_ms']},{t['popularity']},{t['track_url']}\n")
+            f.write(f"{t['track_name']},{artists.replace(',', '')},{t['album']},{t['duration_ms']},{t['popularity']},{t['track_url']}\n")
     print(f"Archivo tracks.txt creado con éxito en {tracks_txt_path}")
 
     # Archivo 2: Artistas y sus canciones con popularidad

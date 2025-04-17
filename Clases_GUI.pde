@@ -151,7 +151,13 @@ class ButtonIcon extends Button {
     this.color_hv = color (0, 0, 0, 75);
     this.color_df = color (0, 0, 0, 1);
   }
-
+  
+  public void Setx(float nx){
+    x = nx;
+  }
+  public void Sety(float ny){
+    y = ny;
+  }
   @Override
     public void display() {
 
