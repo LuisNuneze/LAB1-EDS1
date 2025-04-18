@@ -4,6 +4,11 @@ String original_text = "Bienvenido, introduce un ID\npara comenzar";
 // Limitamos el texto a 90 líneas
 String visible_text = limitar(original_text, 90);
 
+//
+String new_text = visible_text;
+boolean fade_out_text = false, fade_in_text = false;
+float alpha_text = 255;
+
 // Entrada de texto por teclado
 String input_text = "";
 
@@ -60,6 +65,9 @@ color colorBarra1, colorBarra2, colorBarra3, colorBarra4, colorBarra5;
 color colorTorta1, colorTorta2, colorTorta3, colorTorta4, colorTorta5, colorTortaOtros;
 String a1 = "", a2 = "", a3 = "", a4 = "", a5 = "";
 int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, otros = 0, total = 0;
+String titulo1 = "", titulo2 = "", titulo3 = "", titulo4 = "", titulo5 = "";
+float pop1 = -1, pop2 = -1, pop3 = -1, pop4 = -1, pop5 = -1;
+
 
 
 void inicializarGUI() {
@@ -128,7 +136,23 @@ void mostrarGUI() {
   fill(color_highlight);
   textLeading(24);
   textSize(12);
-  fill(color_highlight);
+  textAlign(LEFT);
+  fill(color_highlight,alpha_text);
+  if (fade_out_text) {
+    alpha_text -= 10;
+    if (alpha_text <= 0) {
+      alpha_text = 0;
+      visible_text = new_text;
+      fade_out_text = false;
+      fade_in_text = true;
+    }
+  } else if (fade_in_text) {
+    alpha_text += 10;
+    if (alpha_text >= 255) {
+      alpha_text = 255;
+      fade_in_text = false;
+    }
+  }
   text(visible_text, scroll_window_x + text_offset_x, scroll_window_y + text_offset_y);
   noClip();
   pop();
@@ -469,38 +493,108 @@ void graficaCircularConLeyenda(float x, float y, float w, float h) {
   float radio = min(w, h) / 2;
   float anguloInicio = 0;
 
-  float[] angulos = {c1, c2, c3, c4, c5, otros};
-  color[] colores = {colorTorta1, colorTorta2, colorTorta3, colorTorta4, colorTorta5, colorTortaOtros};
-  String[] etiquetas = {a1, a2, a3, a4, a5, "Otros"};
-
-  for (int i = 0; i < angulos.length; i++) {
-    if (angulos[i] > 0) {
-      float angulo = map(angulos[i], 0, total, 0, TWO_PI);
-      fill(colores[i]);
-      stroke(15);
-      strokeWeight(2);
-      arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
-      anguloInicio += angulo;
-    }
+  // Arcos de la torta
+  if (c1 > 0) {
+    float angulo = map(c1, 0, total, 0, TWO_PI);
+    fill(colorTorta1);
+    stroke(15);
+    strokeWeight(2);
+    arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
+    anguloInicio += angulo;
+  }
+  if (c2 > 0) {
+    float angulo = map(c2, 0, total, 0, TWO_PI);
+    fill(colorTorta2);
+    stroke(15);
+    strokeWeight(2);
+    arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
+    anguloInicio += angulo;
+  }
+  if (c3 > 0) {
+    float angulo = map(c3, 0, total, 0, TWO_PI);
+    fill(colorTorta3);
+    stroke(15);
+    strokeWeight(2);
+    arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
+    anguloInicio += angulo;
+  }
+  if (c4 > 0) {
+    float angulo = map(c4, 0, total, 0, TWO_PI);
+    fill(colorTorta4);
+    stroke(15);
+    strokeWeight(2);
+    arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
+    anguloInicio += angulo;
+  }
+  if (c5 > 0) {
+    float angulo = map(c5, 0, total, 0, TWO_PI);
+    fill(colorTorta5);
+    stroke(15);
+    strokeWeight(2);
+    arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
+    anguloInicio += angulo;
+  }
+  if (otros > 0) {
+    float angulo = map(otros, 0, total, 0, TWO_PI);
+    fill(colorTortaOtros);
+    stroke(15);
+    strokeWeight(2);
+    arc(centroX, centroY, radio * 2, radio * 2, anguloInicio, anguloInicio + angulo, PIE);
+    anguloInicio += angulo;
   }
 
+  // Leyenda
   float leyendaX = x;
   float leyendaY = y + h + 10;
+  int leyendaContador = 0;
+
   textAlign(LEFT, CENTER);
   textSize(8);
   fill(255);
 
-  int leyendaContador = 0;
-  for (int i = 0; i < angulos.length; i++) {
-    if (angulos[i] > 0) {
-      fill(colores[i]);
-      rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
-      fill(255);
-      text(etiquetas[i], leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
-      leyendaContador++;
-    }
+  if (c1 > 0) {
+    fill(colorTorta1);
+    rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
+    fill(255);
+    text(a1, leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
+    leyendaContador++;
+  }
+  if (c2 > 0) {
+    fill(colorTorta2);
+    rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
+    fill(255);
+    text(a2, leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
+    leyendaContador++;
+  }
+  if (c3 > 0) {
+    fill(colorTorta3);
+    rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
+    fill(255);
+    text(a3, leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
+    leyendaContador++;
+  }
+  if (c4 > 0) {
+    fill(colorTorta4);
+    rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
+    fill(255);
+    text(a4, leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
+    leyendaContador++;
+  }
+  if (c5 > 0) {
+    fill(colorTorta5);
+    rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
+    fill(255);
+    text(a5, leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
+    leyendaContador++;
+  }
+  if (otros > 0) {
+    fill(colorTortaOtros);
+    rect(leyendaX, leyendaY + leyendaContador * 20, 12, 12);
+    fill(255);
+    text("Otros", leyendaX + 18, leyendaY + leyendaContador * 20 + 6);
   }
 }
+
 
 void generarColores() {
   colorBarra1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));

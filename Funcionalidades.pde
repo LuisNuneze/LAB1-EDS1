@@ -1,6 +1,7 @@
 //Metodos para los botones
 void obtenerDestacados() {
-  visible_text = limitar(artistaMayorCanciones() + "\n" + artistaMasPopular() + "\n" + cancionesMayorDuracionPromedio(), 90);
+  new_text = limitar(artistaMayorCanciones() + "\n" + artistaMasPopular() + "\n" + cancionesMayorDuracionPromedio(), 90);
+  fade_out_text = true;
 }
 
 //Metodo para hallar el artista con mayor canciones en la playlist
