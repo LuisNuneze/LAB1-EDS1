@@ -523,7 +523,7 @@ void graficaBarras(float x, float y, float w, float h) {
     line(x, yPos, x + w, yPos);
     noStroke();
     textSize(8);
-    text(nf(v, 0, 0), x - 5, yPos);
+    text(int(nf(v, 0, 0)), x - 5, yPos);
   }
 
   textAlign(CENTER, TOP);

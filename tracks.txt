@@ -1,27 +1,166 @@
-Bring Me To Life,Evanescence,Fallen,235893,88,https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp
-One Step Closer,Linkin Park,Hybrid Theory (Bonus Edition),157333,85,https://open.spotify.com/track/3K4HG9evC7dg3N0R9cYqk4
-Centuries,Fall Out Boy,American Beauty/American Psycho,228360,83,https://open.spotify.com/track/04aAxqtGp5pv12UXAg4pkq
-Re:make,ONE OK ROCK,Zankyō Reference,204493,55,https://open.spotify.com/track/6IghCx6jRj5VHEmXKQH2pR
-What I've Done,Linkin Park,Minutes to Midnight,205226,84,https://open.spotify.com/track/18lR4BzEs7e3qzc0KVkTpU
-In the End,Linkin Park,Hybrid Theory (Bonus Edition),216880,89,https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq
-Taking Over Me,Evanescence,Fallen,228613,60,https://open.spotify.com/track/5j7gLuOsBOyqooruGxX4nx
-Given Up,Linkin Park,Minutes to Midnight,189293,79,https://open.spotify.com/track/1fLlRApgzxWweF1JTf8yM5
-Courtesy Call,Thousand Foot Krutch,The End Is Where We Begin,236898,77,https://open.spotify.com/track/0AOmbw8AwDnwXhHC3OhdVB
-Monster,Skillet,Awake,178013,82,https://open.spotify.com/track/2UREu1Y8CO4jXkbvqAtP7g
-Everybody's Fool,Evanescence,Fallen,195880,72,https://open.spotify.com/track/0tWEB6BxbI48XN79QE1JbT
-Hero,Skillet,Awake,186813,76,https://open.spotify.com/track/4CbKVDZkYKdv69I4bCaKUq
-Numb,Linkin Park,Meteora,187520,89,https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h
-Faint,Linkin Park,Meteora (Bonus Edition),162106,70,https://open.spotify.com/track/7AB0cUXnzuSlAnyHOqmrZr
-My Demons,STARSET,Transmissions (Deluxe Version),288036,74,https://open.spotify.com/track/3Xfg7AegXaDLoD5GOUMf2e
-Rise,Skillet,Rise (Deluxe Edition),260786,65,https://open.spotify.com/track/1W0YS64vF9qgMVLuN76aqg
-Can You Feel My Heart,Bring Me The Horizon,Sempiternal (Expanded Edition),228146,79,https://open.spotify.com/track/0WSa1sucoNRcEeULlZVQXj
-Feel Invincible,Skillet,Unleashed,229933,75,https://open.spotify.com/track/0i8JFpqe9cKwnrcvoNgl1L
-Heavy Is the Crown,Linkin Park,Heavy Is the Crown,167012,77,https://open.spotify.com/track/3fgehc497TFqKH1zBL2YNK
-Rise from the Ashes,Stria,Stria,230466,40,https://open.spotify.com/track/4mSWjPRRXZjBHA2vYoF9GK
-Let Me Hear,Fear and Loathing in Las Vegas,Feeling of Unity,225546,1,https://open.spotify.com/track/5sqkarfxe7UejHTlCtHCLS
-This Fire,Killswitch Engage,As Daylight Dies (Special Edition),189666,66,https://open.spotify.com/track/07ceEXOyS7ghQkyCOycXwP
-Metalingus,Alter Bridge,One Day Remains,259959,69,https://open.spotify.com/track/3UULkHdmLDqBDPmBYltoRE
-Toxicity,System Of A Down,Toxicity,218933,86,https://open.spotify.com/track/0snQkGI5qnAmohLE7jTsTn
-Immortals,Fall Out Boy,American Beauty/American Psycho,189386,77,https://open.spotify.com/track/3Te8uLyit6X3ncNW8Fp3K2
-Last Resort,Papa Roach,Infest,199906,84,https://open.spotify.com/track/5W8YXBz9MTIDyrpYaCg2Ky
-Enemy (with JID) - from the series Arcane League of Legends,Imagine Dragons;JID;Arcane;League of Legends,Enemy (with JID) [from the series Arcane League of Legends],173381,78,https://open.spotify.com/track/1r9xUipOqoNwggBpENDsvJ
+Amor Prohibido,Selena,Amor Prohibido,172626,3,https://open.spotify.com/track/1kCewNSs909Xj1naXr36X8
+Despacito,Luis Fonsi;Daddy Yankee,VIDA,229360,83,https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb
+Amor Prohibido,Selena,La Leyenda (Version Super Deluxe),164120,53,https://open.spotify.com/track/7ii1YH0rOmpoRfH9HyY8To
+Háblame De Ti,Banda MS de Sergio Lizárraga,No Me Pidas Perdón,190773,75,https://open.spotify.com/track/1O18MtSAMUk7JfAVB8gGzs
+Hacer El Amor Con Otro,Alejandra Guzman,Flor De Piel,283133,74,https://open.spotify.com/track/1OB7cLxxCWA8gbbfjFNNej
+A Esa,Pimpinela,Personalidad,188106,63,https://open.spotify.com/track/42QWOsW1f9uDu9zsoUAE73
+Llamadas Perdidas,Lirow,Llamadas Perdidas,236000,50,https://open.spotify.com/track/1HIWRP9d6i1r3hD6dtx93k
+Soy Un Desastre,Timbiriche,Timbiriche Rock Show,234746,60,https://open.spotify.com/track/7rN9wxpkoUoZG6hMaLUmFS
+Tiempo De Vals,Chayanne,Tiempo De Vals,247933,60,https://open.spotify.com/track/2d6m2u18196oYQS2mbaO6t
+Poniendo Fichas,Daniel Santacruz,Poniendo Fichas,219625,49,https://open.spotify.com/track/5YCoBe7xqmh0yIinTyoitg
+El Listón De Tu Pelo,Los Ángeles Azules,Una Lluvia De Rosas,216106,75,https://open.spotify.com/track/5hrxAFrYbNTLjAYSrmbpgr
+Eternamente Bella,Alejandra Guzman,Eternamente Bella,206946,54,https://open.spotify.com/track/0WZqP2WahJbKURqUK3fBPk
+Oye Mi Amor,Maná,¿Dónde Jugarán Los Niños?,263306,81,https://open.spotify.com/track/5EJ2THuhAapEIeQOtXUQ0x
+La Gota Fria,Carlos Vives,Clasicos de la Provincia,215493,68,https://open.spotify.com/track/4tXR895KKljrC2VptgyEhJ
+Besos De Ceniza,Timbiriche,Timbiriche 7,176133,62,https://open.spotify.com/track/55DQStH29qHXa29EgJa7fb
+Desesperado,Lirow,Desesperado,220500,0,https://open.spotify.com/track/1enGFS0N6MjJ4JHHkQt35j
+Mil Horas,La Sonora Dinamita;Alvaro Pava,Greatest Cumbia Classics Of Colombia Vol. 2,226600,42,https://open.spotify.com/track/13xVmEV4G5jh8zDIFTZeIy
+El Chico Del Apartamento 512,Selena,Amor Prohibido,208866,2,https://open.spotify.com/track/1lh3TnDpfNBNfLfOWghNnp
+Di Que Sí,Lirow,México En Bachata,187000,36,https://open.spotify.com/track/2CzSmkZ33ZPbDBdzoMSlh2
+No Podras,Cristian Castro,Agua Nueva,240480,75,https://open.spotify.com/track/6ZIwZmQ2ph6QK13sItmDEx
+Ciega Sordomuda,Shakira,Donde Estan Los Ladrones,267826,82,https://open.spotify.com/track/7jxHeJLVpnP7S08JFF4GBi
+17 Años,Los Ángeles Azules,Singles,180573,51,https://open.spotify.com/track/5BXsVmMTDq5Oa1DiRDUdUN
+Desesperada,Marta Sánchez,Mujer,227733,3,https://open.spotify.com/track/20WaSPMyeIO7NntPpn1FM5
+Querida,Juan Gabriel;Juanes,Los Dúo,295280,61,https://open.spotify.com/track/7osHjFGYUmIMB6eAiU9HDs
+Como Duele,Lirow,Como Duele,248583,51,https://open.spotify.com/track/1bEW7Yt75pqJJ7UiOiYLv5
+Me Dediqué a Perderte,Alejandro Fernández,A Corazón Abierto,231773,82,https://open.spotify.com/track/4NUt1fcnO9aQAELBgXq3Kr
+Maldita Primavera - Utilizar el código MXF011400504,Yuridia,La Voz de un Ángel,185640,33,https://open.spotify.com/track/21r1JIeXmqUMDz9bnp3u3o
+Que Nadie Sepa Mi Sufrir,Sonora Siguaray,De Mil Maneras,246733,65,https://open.spotify.com/track/746BX8eh7gTFJUaVwF3Hpk
+Más Que Tu Amigo,Marco Antonio Solís,Tu Amor O Tu Desprecio,209506,73,https://open.spotify.com/track/1Vy7WUJubV9JEoebuJ9dfe
+Quitame Ese Hombre,Pilar Montenegro,Desahogo,228654,0,https://open.spotify.com/track/2l8t8LlZTPKIzqogcH8EWB
+Aquí Abajo,Lirow,Aquí Abajo,198666,48,https://open.spotify.com/track/3hsjGTNxyA4YTzzgLIggzv
+Sola Con Mi Soledad,Marisela,15 Éxitos de Marisela Vol. 2,229933,0,https://open.spotify.com/track/1DocEW5Vym3fuAHkWN81LE
+Evidencias,Ana Gabriel,Silueta,256706,69,https://open.spotify.com/track/5YndFYZkywO0F5taLwCEQR
+Que Pena,Yas Gagliardi,Que Pena,143375,41,https://open.spotify.com/track/0BJLGG3x1o0GuvJ0OrXOvm
+Y Aquí Estoy,Ana Gabriel,Mis Favoritas,223613,16,https://open.spotify.com/track/2W8a2nniy4SvVgzaiidiec
+Hips Don't Lie (feat. Wyclef Jean),Shakira;Wyclef Jean,Oral Fixation Vol. 2 (Expanded Edition),218093,88,https://open.spotify.com/track/3ZFTkvIE7kyPt6Nu3PEa7V
+Cómo Te Va Mi Amor,Pandora,Locas Por La Música,222413,72,https://open.spotify.com/track/6Vy53iriyX8Vqx0V68Jzn2
+Bailando - Spanish Version,Enrique Iglesias;Descemer Bueno;Gente De Zona,SEX AND LOVE (Deluxe),243413,67,https://open.spotify.com/track/32lm3769IRfcnrQV11LO4E
+El Privilegio De Amar,Mijares,El Privilegio De Amar,236493,65,https://open.spotify.com/track/3NGG1do9lT815M5REcCzzm
+Aquí Abajo,Lirow,Aquí Abajo,198666,48,https://open.spotify.com/track/3hsjGTNxyA4YTzzgLIggzv
+Secreto De Amor,Joan Sebastian,Secreto De Amor,273008,73,https://open.spotify.com/track/47PiSg7z5qjUyEGKN4I1g7
+El Me Mintio,Amanda Miguel,El Sonido Vol I,219546,0,https://open.spotify.com/track/67bbc4lUkhTtDrcu5gv1uN
+Desvelado,Lirow,México En Bachata,228000,37,https://open.spotify.com/track/75oNj1orTR0TYauVqLVnht
+Como Tu Mujer,Rocío Dúrcal,Como Tu Mujer,262706,73,https://open.spotify.com/track/6ljWmeDCoqgIFOVKVmKEmu
+Ni Tú Ni Nadie,Mœnia,Stereo Hits,219533,73,https://open.spotify.com/track/16J6wH4Evm97ta1hDQIYQC
+Me Duele,Lirow,Bailando Bachata,190563,0,https://open.spotify.com/track/3yp7Gl0MZzHDHzBcFTHsPV
+Inolvidable,Jenni Rivera,Mi Vida Loca,179320,67,https://open.spotify.com/track/7bEZbS1gadU29L5eIwM2gM
+¿A Dónde Vamos A Parar?,Marco Antonio Solís,En Total Plenitud,228920,74,https://open.spotify.com/track/1Agu4u8a8Qm28zq5JtwaVv
+Rumores,Joan Sebastian,Coleccion De Oro Vol. 2 - Joan Sebastian,222400,0,https://open.spotify.com/track/5qebmxkA0qSeW9g3avEUBW
+Limón y Sal,Julieta Venegas,Realmente Lo Mejor,206293,46,https://open.spotify.com/track/6iWSxa6ivQsbjGbRZVQjjI
+Sobreviviré,Lucero,Lucero,198373,0,https://open.spotify.com/track/1pgkB4dQ7ii5aWZt72FYid
+Juana La Cubana,Fito Olivares y Su Grupo,Exitos Inolvidables,190800,61,https://open.spotify.com/track/1cdpDAE7LHSHviJ73SGuGS
+La Pareja Ideal,Marisela,15 Éxitos de Marisela Vol. 1,213506,63,https://open.spotify.com/track/6HTBhdYFWi1wIGbm7dV7iV
+Lamento Boliviano,Los Enanitos Verdes,Coleccion Aniversario,223146,59,https://open.spotify.com/track/62FQCSvSUSG3m9uajVkvWe
+Amiga Fiel,Lirow,Bailando Bachata,207194,37,https://open.spotify.com/track/0uXql5JR69NfLBH0Uc36wU
+Niña Bonita,Chino & Nacho,Mi Niña Bonita - Reloaded,216786,75,https://open.spotify.com/track/4u5xLMRN0dgKBFFN8FiNgv
+Bésame,Juan Gabriel,Recuerdos II,248146,59,https://open.spotify.com/track/2j5bHQAndEClzp0kvICy3w
+Besos Escondidos,Penélope Santacruz,Besos Escondidos,182820,44,https://open.spotify.com/track/1kL3WJQTOiiOtIyBoi8h4g
+Bazar,Flans,Flans,209573,64,https://open.spotify.com/track/7CLxH03q65I3aktL79k4vE
+Piel Morena,Thalia,Greatest Hits,284066,45,https://open.spotify.com/track/2SskegvRkUbZA6HgOxpkdf
+No Me Olvides,Lirow,No Me Olvides,178699,29,https://open.spotify.com/track/6Jjw2OhB8QtJ3UAtW4XYKg
+Dr. Psiquiatra,Gloria Trevi,Recuento De Los Daños,222066,17,https://open.spotify.com/track/0SHub0heXSwOsx8GJbhgvh
+Tú No Eres Para Mi,Fanny Lu,Dos,205666,73,https://open.spotify.com/track/3df4fSoW5zsdNi5Wf3K5RP
+Ahora Te Puedes Marchar,Luis Miguel,Soy Como Quiero Ser,191973,79,https://open.spotify.com/track/1uKjQoh8JZj9ryuYRhpd7E
+Ya Te Olvidé,Rocío Dúrcal,Como Tu Mujer,178426,66,https://open.spotify.com/track/7fYr68C6tRUsGIym4poraT
+Quién Como Tú,Ana Gabriel,Ana Gabriel Todos Sus Exitos,212200,0,https://open.spotify.com/track/3UBpH7Y85ixCv7ditDHxWH
+Cosas del Amor,Lirow,Cosas del Amor,192640,22,https://open.spotify.com/track/2KGPgf08hJEVsdHhY7C1ib
+Con los Ojos Cerrados,Gloria Trevi,Me Siento Tan Sola,210360,73,https://open.spotify.com/track/6DIt34Pm9LXZUfs4ap67fJ
+Arrasando,Thalia,Arrasando,239733,62,https://open.spotify.com/track/1EhDeCHd34jt7dMDqkGQBC
+Bailando Bachata,Lirow,Bailando Bachata,188055,0,https://open.spotify.com/track/4jCiC3KDKNk1x8y16tupUb
+Te Quiero Tanto Tanto,Onda Vaselina,Entrega Total,187666,68,https://open.spotify.com/track/2S0XH9R1BVZhbcy7j9yQbx
+De Mi Enamórate,Daniela Romo,Original Masters,210333,52,https://open.spotify.com/track/5UXgeLTzAyhgfRJubZRemE
+Mujeres,Ricardo Arjona,Quién Dijo Ayer,207013,66,https://open.spotify.com/track/4TR6e2sBy2PzTnfu6MnLFD
+La Descarada,Reyli Barba,Reyli En La Luna,203906,59,https://open.spotify.com/track/0GXGsFQeB1x5H21xjTF2j5
+La Vida Es Un Carnaval,Celia Cruz,Exitos Eternos,277000,54,https://open.spotify.com/track/3zoYQLfNEvJ7UvQ4em2vsT
+Amor Amor,Lirow,La Carta,255869,0,https://open.spotify.com/track/24YXP8TCZ0rxysbXkJrptG
+Tu Dama de Hierro,Marisela,15 Éxitos de Marisela Vol. 2,195533,49,https://open.spotify.com/track/0PanjuWPniwRZpU2SkMDtF
+Eclipse Total Del Amor,Lissette,Mis Recuerdos,336960,51,https://open.spotify.com/track/4UFlWyUXUots8pCHclBy9A
+Un Beso,Lirow,Un Beso,203500,0,https://open.spotify.com/track/3jD1TUBLiyOGhVc6eiO0eE
+Detrás de Mi Ventana,Yuri,Canciones De Amor De Yuri,280200,0,https://open.spotify.com/track/5HV68uszA535kye0HFMDfO
+Nunca Es Suficiente,Los Ángeles Azules;Natalia Lafourcade,Esto Sí Es Cumbia,266213,69,https://open.spotify.com/track/63USmok1OioBzKuWGW9wAg
+Vamos a Darnos Tiempo,José José,Gracias,248640,74,https://open.spotify.com/track/4hsISengUD6beOi6kUIcXl
+Cómo Te Voy A Olvidar,Los Ángeles Azules,Inolvidables,267826,74,https://open.spotify.com/track/51dNexiESqcJLsGLrmg1Nv
+La Chona,Los Tucanes De Tijuana,Para Tucancillos y Tucancillas,199080,65,https://open.spotify.com/track/79xkyiTBHqdGg3SirACPwy
+El Hombre Que Yo Amo,Myriam Hernandez,Myriam Hernandez,216093,71,https://open.spotify.com/track/2yIUUOe7UVhvxQmaLVqRKr
+La Chica Del Bikini Azul,Luis Miguel,Palabra De Honor,180239,71,https://open.spotify.com/track/6Ucocvd2YaEJRPmbT4SFgu
+Andar Conmigo,Julieta Venegas,Si,193373,75,https://open.spotify.com/track/05iMQqncVBIm4AE26EvaTL
+Quién Como Tú,Ana Gabriel,Quién Como tú,211733,77,https://open.spotify.com/track/4hfiDzgfMqtcOiUQpZidBQ
+Suavemente,Elvis Crespo,Suavemente,267000,66,https://open.spotify.com/track/7cpFmkNmh3MM0WqXPSbs9f
+Bandido,Ana Bárbara,Te Atraparé Bandido,179773,69,https://open.spotify.com/track/5YH0im36TvDjT5CN2VsHHK
+Poniendo Fichas,Daniel Santacruz,Poniendo Fichas,219625,49,https://open.spotify.com/track/5YCoBe7xqmh0yIinTyoitg
+Escándalo,Margarita la diosa de la cumbia,Clasicas para el Bailongo,288560,37,https://open.spotify.com/track/77Lk6b4lNzsHLscXnsIOmI
+Quítame Ese Hombre Del Corazón - Norteña Version,Pilar Montenegro,Las Retro Chingonas De La Cumbia,240480,0,https://open.spotify.com/track/4P9opOBsB3uAfEN4juvjp3
+Besos Escondidos,Penélope Santacruz,Besos Escondidos,182820,44,https://open.spotify.com/track/1kL3WJQTOiiOtIyBoi8h4g
+Querida,Juan Gabriel,Recuerdos II,328320,72,https://open.spotify.com/track/5ySxlyvySBhIEvoO2xx7uT
+Si Una Vez,Selena,Amor Prohibido,167000,1,https://open.spotify.com/track/3zLQtoEeXA6Lr1sNrbyYbs
+Olvídame y Pega la Vuelta,Pimpinela,Pimpinela,185800,69,https://open.spotify.com/track/4FdwRmlzP5KGM7OewGBYiu
+La Incondicional,Luis Miguel,Busca Una Mujer,257026,78,https://open.spotify.com/track/6F9yAYUaNbUhdlQyt5uZ3b
+Para No Verte Más,La Mosca,Visperas De Carnaval,191560,77,https://open.spotify.com/track/19CmuECYssqkPWANF4nLWM
+Muchacha Triste,Los Fantasmas del Caribe,Lo Mejor de Los Fantasmas del caribe,244506,62,https://open.spotify.com/track/5Lhea4g9nPsbmwo2HIBpni
+Pelo Suelto,Gloria Trevi,Tu Angel De La Guarda,206600,61,https://open.spotify.com/track/1H8aAoRO817bygKpgvAcpf
+Algo Más,La Quinta Estacion,Flores De Alquiler,269080,0,https://open.spotify.com/track/1TcwFgNVSk901hK4Rwpcsn
+Talento De Televisión,Willie Colón,Mis Favoritas,279320,74,https://open.spotify.com/track/3fRIuTih8bzc0vtY9fHhvF
+Vuela Vuela (Voyage Voyage),Magneto,La Historia De Magneto,265466,68,https://open.spotify.com/track/6nz1ojKuYx5HO7Vh0wmuWp
+Yo no te pido la luna (Non voglio mica la luna),Daniela Romo,Amor prohibido,236453,64,https://open.spotify.com/track/09uE7kHv2ESkvtInKugpGM
+Cosas del Amor (with Vikki Carr),Ana Gabriel;Vikki Carr,Lo Esencial De Ana Gabriel,257453,66,https://open.spotify.com/track/4BBJezanyqAj6rRC1fKIg4
+Oye,Margarita la diosa de la cumbia,30 Aniversario,155213,41,https://open.spotify.com/track/04JEvxmdGP93VzXekCxoJZ
+Me Gustas Mucho,Rocío Dúrcal,Mis Mejores Canciones,188826,57,https://open.spotify.com/track/2i7SlECYIAsT72FpLUU1Uj
+Me Han Dicho Que Tú,Lirow,La Carta,256809,0,https://open.spotify.com/track/7hFbLK1yAi4ZZ7jAarmlIC
+Como te extraño mi amor,Café Tacvba,Avalancha de éxitos,214880,71,https://open.spotify.com/track/6hFHsQWB7HdVrSe7efRR82
+Mío,Paulina Rubio,La Chica Dorada,225866,67,https://open.spotify.com/track/77GJz1FIKgjIp9KtnGc8Fl
+Mayonesa - Radio Edit,Chocolate,Mayonesa para Todo el Mundo,231200,23,https://open.spotify.com/track/1TeKpzKqR1vFV3fYjMLieR
+La Media Vuelta,Luis Miguel,Segundo Romance,161040,77,https://open.spotify.com/track/1lKI9y1DL6QnYTZguVmACX
+Súbete a Mi Moto,Menudo,15 Años De Historia,210893,42,https://open.spotify.com/track/1zHmnDfyTpYvu7KkCeqntZ
+Colgando en tus manos (con Marta Sánchez),Carlos Baute;Marta Sánchez,De mi puño y letra - Edicion Coleccionista,230280,80,https://open.spotify.com/track/3UI9I3e1g1y5T3SMfdgfGO
+Todo Se Derrumbó Dentro de Mí,Emmanuel,Exitos Alma Amor Y Guitarra,313333,0,https://open.spotify.com/track/0h8x0YALmyeZHW8lug8eki
+Cuando Calienta El Sol,Luis Miguel,Grandes Éxitos,236413,54,https://open.spotify.com/track/2Luer8kLzFkQcjw8CU8x35
+Amante Perfecto,Lirow,Historias,182708,31,https://open.spotify.com/track/21tjcCj1SWR6EEa4OrdBjJ
+Mentiras,Daniela Romo,30 Exitos Insuperables,236533,41,https://open.spotify.com/track/15Ua6Q1yeD6GHdf4J0Elws
+Me Dejó,Henry Santos,Me Dejó,212500,20,https://open.spotify.com/track/0cWiFRmbTH7UgvGvnbrwYA
+Te He Prometido,Leo Dan,Roma (Original Motion Picture Soundtrack),187413,49,https://open.spotify.com/track/15vvGrycJyA5tMb6PXdQYO
+La Ventanita,Garibaldi,Caribe,251333,60,https://open.spotify.com/track/49nYkvvZTU06Pcwu1SrK4h
+Celos,Daniela Romo,Coleccion Suprema Plus- Daniela Romo,160346,11,https://open.spotify.com/track/2208qFsgLV7NFZQP9H6eta
+Abrázame Muy Fuerte,Juan Gabriel,Abrázame Muy Fuerte,239426,76,https://open.spotify.com/track/2nejvFyJeTDtMRP2nUMt0J
+Es Mejor Así,Cristian Castro,Un Segundo En El Tiempo,237866,65,https://open.spotify.com/track/1LUIgyVglAOLb3AtA9ZgYb
+Mis Ojos Lloran Por Ti,Big Boy;Angel Lopez,Mis Ojos Lloran Por Ti,295533,75,https://open.spotify.com/track/4fFgpzgSkmn3wajioLBPOr
+Como La Flor,Selena,Dreaming Of You,184733,0,https://open.spotify.com/track/129dk74J9QHv6Bho1hY8Dz
+Cómo Te Va Mi Amor,Pandora,Solo Lo Mejor - 20 Exitos,239400,43,https://open.spotify.com/track/6OR7yBwjgUn8PfH5Xbhivh
+Bella Señora,Emmanuel,Lo Esencial,280493,35,https://open.spotify.com/track/3x9gN89nlVEX4ApABJIzWn
+Procura,ChiChi Peralta;Jandy Feliz,Pa' Otro La 'O,271031,77,https://open.spotify.com/track/2q9udNV9NK0BL3q9p6TLxf
+La Papa Sin Catsup,Gloria Trevi,Mas Turbada Que Nunca,213066,55,https://open.spotify.com/track/3OOWm0MiN6yL4eJsJNXyYk
+Na Na Na (Dulce Niña),A.B. Quintanilla III Y Los Kumbia Kings,Lo Mejor De...,207693,66,https://open.spotify.com/track/3o3eHNNF5HDU3I0Jg25SGD
+Maldita Primavera,Yuri,Coleccion Suprema,234320,69,https://open.spotify.com/track/3GUyiFEglEm9rSToOf5YZW
+Quédate Con Ella,Natalia Jiménez,Creo en Mi,229786,64,https://open.spotify.com/track/0BTBoi7AeMBrMP6cwOLNR0
+Cerca Está,Verde Novela,Cerca Está,227154,9,https://open.spotify.com/track/1vnbXqr0Vd7GOa8TvmmtVM
+La Calle De Las Sirenas,Kabah,La Más Completa Colección,231506,0,https://open.spotify.com/track/4KwYQPF1MrpItRpb2H6mdT
+Danza Kuduro,Don Omar;Lucenzo,Meet The Orphans,198773,85,https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw
+Suavecito Suavecito,Laura Leon,15 Éxitos,225720,0,https://open.spotify.com/track/6Ysnd9T4uIhQesbWK672GF
+Sopa de Caracol,Banda Blanca,Lo Mejor de Banda Blanca - 16 Exitos,293906,62,https://open.spotify.com/track/4V8uHuLaBRxQ02H4YNCOO7
+¿Por Qué Me Haces Llorar?,Juan Gabriel,Juan Gabriel,182880,75,https://open.spotify.com/track/68pE8830rWrd5LSSfKcRqn
+Cuéntame,Lucero,Cuéntame,215666,55,https://open.spotify.com/track/1T1nYfU115UL2LhwTMyWr6
+Si No Es Ahora,Timbiriche,Timbiriche 7,233666,67,https://open.spotify.com/track/1SugSbcbW78x4VAgixwiG0
+Pero Qué Necesidad,Juan Gabriel,Gracias por Esperar,354013,60,https://open.spotify.com/track/5rycwubN7We1zdSDM1ZABW
+Bidi Bidi Bom Bom,Selena,La Leyenda (Version Super Deluxe),187524,70,https://open.spotify.com/track/0o9Vr0BGIQPh32staLHcuU
+Dos Mujeres un Camino,Laura Leon,15 Éxitos,255680,31,https://open.spotify.com/track/1IY3GJk8HgLWpKtjtKXN52
+Mi Primer Millon,Bacilos,Caraluna,237386,75,https://open.spotify.com/track/5fSDXbY8o9pA3TKwAbfwML
+X,Nicky Jam;J Balvin,X,173627,7,https://open.spotify.com/track/39N9RPD9MRb5WmoLzNzPeA
+Livin' la Vida Loca,Ricky Martin,Ricky Martin,243160,78,https://open.spotify.com/track/0Ph6L4l8dYUuXFmb71Ajnd
+Caray - En Vivo Desde Bellas Artes México/ 2013,Juan Gabriel,Mis 40 En Bellas Artes (En Vivo Desde Bellas Artes México/ 2013/ Parte 1),99480,35,https://open.spotify.com/track/4Ri2PSYJQP8yw2absDTIsi
+El Ultimo Adios,Paulina Rubio,Paulina,285773,0,https://open.spotify.com/track/0lyTmkKzxqdwUykN1BEDu6
+Con Todos Menos Conmigo,Timbiriche,Timbiriche 7,184946,69,https://open.spotify.com/track/4d7N2lqEJMbQwVy1LCqhXv
+La Llamada - 1993 Version,Selena y los Dinos,La Leyenda (Version Super Deluxe),189920,47,https://open.spotify.com/track/0g5m1UJVMWQkNjZk1suW4s
+Mayores,Becky G;Bad Bunny,MALA SANTA,203186,76,https://open.spotify.com/track/2AY1UAimvTqjJC8vDJsOyy
+La Bomba,Azul Azul,El Sapo,123960,67,https://open.spotify.com/track/0Tl84qfow6Dv0PM60zoBhb
+Qué Te Pasa,Yuri,Original Masters,187333,28,https://open.spotify.com/track/18abaFDQBzj6Gj40YELKwM
+Si No Te Hubieras Ido,Marco Antonio Solís,Trozos De Mi Alma,287906,0,https://open.spotify.com/track/62qI8m0sXpzlSjYYx0nZ83
+Todos Me Miran,Gloria Trevi,6 Super Hits,205093,22,https://open.spotify.com/track/6Ty59oP83pZ2OLKwKOl891
+¡Ay Amor!,Ana Gabriel,Pecado Original,201040,73,https://open.spotify.com/track/0fC6Szw2CX8XZYsydOLmVC
+Amor A La Mexicana,Thalia,Amor A La Mexicana,265333,58,https://open.spotify.com/track/1LxoxVuG3T5Ji0eCua8N30
+El Noa Noa,Juan Gabriel,Recuerdos,261839,62,https://open.spotify.com/track/2vfJS6gcbDia3SeM6VH0Id
+El Perdón (with Enrique Iglesias),Nicky Jam;Enrique Iglesias,Fénix,205906,77,https://open.spotify.com/track/7qCAVkHWZkF44OzOUKf8Cr
+Detrás de Mi Ventana,Yuri,NUEVA ERA,279026,66,https://open.spotify.com/track/0vhOhQerNeK037EpSmphzb
+Mi Cucu,La Sonora Dinamita;Lucho Argain;La India Meliyará,El Show De,234706,7,https://open.spotify.com/track/2aKx9EuI1kfaGUgfcz0Z5G
+Se Va a Beber,Lirow;Grupo Extra,Se Va a Beber,219100,41,https://open.spotify.com/track/3zeJlsGaHY87ufWtUPt9uH
+Tu Cárcel,Los Bukis,Me Volvi A Acordar De Ti,212226,73,https://open.spotify.com/track/0LNn2O06dvsZqvWaS870xJ
+Quizás Quizás Quizás - (Digital Remaster Limited Edition),Daniel Peña;Paquito Guzman,Quizás Quizás Quizás - (Digital Remaster Limited Edition),193591,4,https://open.spotify.com/track/4QO9x1uevt0RBef85sbMzU
