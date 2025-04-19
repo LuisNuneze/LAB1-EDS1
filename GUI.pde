@@ -65,8 +65,7 @@ color colorBarra1, colorBarra2, colorBarra3, colorBarra4, colorBarra5;
 color colorTorta1, colorTorta2, colorTorta3, colorTorta4, colorTorta5, colorTortaOtros;
 String a1 = "", a2 = "", a3 = "", a4 = "", a5 = "";
 int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, otros = 0, total = 0;
-String titulo1 = "", titulo2 = "", titulo3 = "", titulo4 = "", titulo5 = "";
-float pop1 = -1, pop2 = -1, pop3 = -1, pop4 = -1, pop5 = -1;
+
 
 
 
@@ -137,7 +136,7 @@ void mostrarGUI() {
   textLeading(24);
   textSize(12);
   textAlign(LEFT);
-  fill(color_highlight,alpha_text);
+  fill(color_highlight, alpha_text);
   if (fade_out_text) {
     alpha_text -= 10;
     if (alpha_text <= 0) {
@@ -351,9 +350,9 @@ void graficas() {
   noStroke();
   rect(panelX+50, panelY+50, panelW, panelH, 15);
   println(panelX);
-  if(panelX > -680){
+  if (panelX > -680) {
     button_quitG.display();
-  IniciarGraficas();
+    IniciarGraficas();
   }
 }
 
@@ -365,58 +364,124 @@ void IniciarGraficas() {
     int contador = 0;
     while (reader.readLine() != null) contador++;
     reader.close();
-    println(contador);
-    if (contador == 1) {
+
+    if (contador <= 1) {
       mostrarGraficas = false;
       return;
     }
-    reader = new BufferedReader(new FileReader(filePath));
 
+    reader = new BufferedReader(new FileReader(filePath));
     popularidades = new float[contador];
     titulos = new String[contador];
     artistas = new String[contador];
 
     String linea;
-    int i = 0;
+    int index = 0;  
     while ((linea = reader.readLine()) != null) {
       String[] partes = linea.split(",");
       if (partes.length >= 6) {
-        titulos[i] = partes[0];
-        artistas[i] = partes[1];
-        popularidades[i] = float(partes[4]);
-
-        String actual = partes[1];
-        if (actual.equals(a1)) c1++;
-        else if (actual.equals(a2)) c2++;
-        else if (actual.equals(a3)) c3++;
-        else if (actual.equals(a4)) c4++;
-        else if (actual.equals(a5)) c5++;
-        else if (a1.equals("")) {
-          a1 = actual;
-          c1 = 1;
-        } else if (a2.equals("")) {
-          a2 = actual;
-          c2 = 1;
-        } else if (a3.equals("")) {
-          a3 = actual;
-          c3 = 1;
-        } else if (a4.equals("")) {
-          a4 = actual;
-          c4 = 1;
-        } else if (a5.equals("")) {
-          a5 = actual;
-          c5 = 1;
-        } else otros++;
-        total++;
-        i++;
+        titulos[index] = partes[0];
+        artistas[index] = partes[1];
+        popularidades[index] = float(partes[4]);
+        index++;
       }
     }
-    if (contador == 1 && linea == null) {
-      mostrarGraficas = false;
-      return;
+
+    int totalCanciones = index;
+
+
+    for (int a = 0; a < totalCanciones - 1; a++) {
+      for (int b = a + 1; b < totalCanciones; b++) {
+        if (popularidades[b] > popularidades[a]) {
+          float tempPop = popularidades[a];
+          popularidades[a] = popularidades[b];
+          popularidades[b] = tempPop;
+
+          String tempTit = titulos[a];
+          titulos[a] = titulos[b];
+          titulos[b] = tempTit;
+
+          String tempArt = artistas[a];
+          artistas[a] = artistas[b];
+          artistas[b] = tempArt;
+        }
+      }
     }
-    graficaBarras(panelX+100, panelY+90, 250, 330);
-    graficaCircularConLeyenda(panelX+380, panelY+130, 220, 220);
+
+
+    a1 = "";
+    a2 = "";
+    a3 = "";
+    a4 = "";
+    a5 = "";
+    c1 = 0;
+    c2 = 0;
+    c3 = 0;
+    c4 = 0;
+    c5 = 0;
+    total = 0;
+
+
+    for (int i = 0; i < totalCanciones; i++) {  
+      String actual = artistas[i];
+      int conteo = 0;
+
+
+      for (int j = 0; j < totalCanciones; j++) {
+        if (artistas[j].equals(actual)) conteo++;
+      }
+
+      boolean yaAsignado = false;
+      if (actual.equals(a1) || actual.equals(a2) || actual.equals(a3) || actual.equals(a4) || actual.equals(a5)) {
+        yaAsignado = true;
+      }
+
+      if (!yaAsignado) {
+        if (conteo > c1) {
+          a5 = a4;
+          c5 = c4;
+          a4 = a3;
+          c4 = c3;
+          a3 = a2;
+          c3 = c2;
+          a2 = a1;
+          c2 = c1;
+          a1 = actual;
+          c1 = conteo;
+        } else if (conteo > c2) {
+          a5 = a4;
+          c5 = c4;
+          a4 = a3;
+          c4 = c3;
+          a3 = a2;
+          c3 = c2;
+          a2 = actual;
+          c2 = conteo;
+        } else if (conteo > c3) {
+          a5 = a4;
+          c5 = c4;
+          a4 = a3;
+          c4 = c3;
+          a3 = actual;
+          c3 = conteo;
+        } else if (conteo > c4) {
+          a5 = a4;
+          c5 = c4;
+          a4 = actual;
+          c4 = conteo;
+        } else if (conteo > c5) {
+          a5 = actual;
+          c5 = conteo;
+        }
+      }
+
+      total++;
+    }
+
+    otros = total - (c1 + c2 + c3 + c4 + c5);
+
+    graficaBarras(panelX + 100, panelY + 90, 250, 330);
+    graficaCircularConLeyenda(panelX + 380, panelY + 130, 220, 220);
   }
   catch (Exception e) {
     println("Error leyendo archivo: " + e.getMessage());
@@ -431,6 +496,11 @@ void IniciarGraficas() {
     }
   }
 }
+
+
+
+
+
 
 void graficaBarras(float x, float y, float w, float h) {
   float maxValor = 0;
@@ -597,16 +667,16 @@ void graficaCircularConLeyenda(float x, float y, float w, float h) {
 
 
 void generarColores() {
-  colorBarra1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorBarra2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorBarra3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorBarra4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorBarra5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-
-  colorTorta1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorTorta2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorTorta3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorTorta4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorTorta5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-  colorTortaOtros = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-}
+   colorBarra1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorBarra2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorBarra3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorBarra4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorBarra5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+ 
+   colorTorta1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorTorta2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorTorta3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorTorta4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorTorta5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+   colorTortaOtros = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+ }
