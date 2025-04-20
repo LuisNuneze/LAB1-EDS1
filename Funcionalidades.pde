@@ -32,7 +32,7 @@ public String artistaMayorCanciones() {
       println(e);
     }
   }
-  return artista_mayor + ", "+canciones_mayor;
+  return "Artista con mayor aparición: "+artista_mayor + ", "+canciones_mayor;
 }
 
 //Metodo para hallar el artista de mayor popularidad en la playlist
@@ -102,7 +102,7 @@ public String cancionesMayorDuracionPromedio() {
         canciones_mayores += line[0]+" ("+line[3]+")"+"\n";
       }
     }
-    return canciones_mayores;
+    return "Canciones con mayor duración al promedio:\n"+canciones_mayores;
   }
 
   catch (Exception e) {
