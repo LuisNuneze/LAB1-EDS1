@@ -12,7 +12,8 @@ void obtenerCrearArchivos() {
     catch (Exception e) {
       System.out.println(e);
     }
-
+    //Obtenemos la ruta de python, si la hay
+    obtenerRutaPython();
     // Leer ruta de Python
     String[] pathLines = loadStrings("python_path.txt");
     if (pathLines != null && pathLines.length > 0) {
@@ -87,5 +88,27 @@ void obtenerCrearArchivos() {
     catch (Exception e) {
       e.printStackTrace();
     }
+  }
+}
+
+void obtenerRutaPython() {
+  try {
+    // Ejecuta el comando en Windows
+    Process proceso = Runtime.getRuntime().exec("cmd /c where python");
+
+    // Captura la salida del proceso
+    BufferedReader reader = new BufferedReader(new InputStreamReader(proceso.getInputStream()));
+    PrintWriter writer = new PrintWriter(new FileWriter(sketchPath("python_path.txt")));
+
+    String linea;
+    while ((linea = reader.readLine()) != null) {
+      writer.println(linea);                // Guardar en archivo
+    }
+
+    reader.close();
+    writer.close();
+
+  } catch (IOException e) {
+    println("Error: " + e.getMessage());
   }
 }

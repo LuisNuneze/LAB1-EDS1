@@ -212,16 +212,18 @@ String obtener_texto_portapapeles() {
   }
 }
 
-public String buscarArtista(String input_text) {
+public String buscarArtista(String nombre) {
+  //Declaramos la ruta y el resultado el cual contiene un texto en el caso de no encontralo
   String resultado_busqueda = "No encontrado.", ruta_artists = sketchPath("artists.txt");
   try {
     BufferedReader archivo = new BufferedReader(new FileReader(ruta_artists));
     String linea;
-
+    //Almacenamos en linea el valor de bufferes
     while ((linea = archivo.readLine()) != null) {
-      String[] campos = linea.split(",");
-      
-      if (campos.length > 0 && campos[0].equalsIgnoreCase(input_text)) {
+      String[] lines = linea.split(",");
+      //Se paramos los campo
+      if (lines.length > 0 && lines[0].equalsIgnoreCase(nombre)) {
+        //Y comparamos ambos nombres
         // Reemplazar punto y coma por salto de línea al igual que coma
         resultado_busqueda = linea.replace(",", "\n").replace(";", "\n");
         break;
@@ -238,42 +240,45 @@ public String buscarArtista(String input_text) {
 }
 
 public String verContenido() {
+  //Declaramos una variable que tenga la ruta y otra donde almacenar el resultado
   String resultado = "", ruta_artists = sketchPath("artists.txt");
-
+  
   try {
-    BufferedReader br = new BufferedReader(new FileReader(ruta_artists));
+    BufferedReader Archivo = new BufferedReader(new FileReader(ruta_artists));
     String linea;
-
-    while ((linea = br.readLine()) != null) {
+    //Con el buffer abierto declaramos la linea el valor de archivo
+    while ((linea = Archivo.readLine()) != null) {
+      //le damos un mejor formato para una mejor lectura
       resultado += linea.replace(",", " | ").replace(";", " | ") + "\n";
     }
 
-    br.close();
+    Archivo.close();
   } catch (IOException e) {
     e.printStackTrace();
     return "Error al leer el archivo.";
   }
-
+  //Retornamos el resultado
   return resultado;
 }
 
 public String eliminarArchivos() {
   try {
-    PrintWriter pw1 = new PrintWriter(new FileWriter(sketchPath("artists.txt")));
-    pw1.close();
+    //Cargamos lo archivos con la clase file para poder usar el metodo delete sobre ellos y asi eliminarlos
+    File pw1 = new File((sketchPath("artists.txt")));
+    pw1.delete();
 
-    PrintWriter pw2 = new PrintWriter(new FileWriter(sketchPath("artists_temp.txt")));
-    pw2.close();
+    File pw2 = new File((sketchPath("artists_temp.txt")));
+    pw2.delete();
 
-    PrintWriter pw3 = new PrintWriter(new FileWriter(sketchPath("tracks.txt")));
-    pw3.close();
+    File pw3 = new File((sketchPath("tracks.txt")));
+    pw3.delete();
 
-    PrintWriter pw4 = new PrintWriter(new FileWriter(sketchPath("playlist_id.txt")));
-    pw4.close();
+    File pw4 = new File((sketchPath("playlist_id.txt")));
+    pw4.delete();
 
     return "Archivos eliminados.";
 
-  } catch (IOException e) {
+  } catch (Exception e) {
     println("Error al eliminar archivos: " + e.getMessage());
     return "Error al eliminar archivos";
   }

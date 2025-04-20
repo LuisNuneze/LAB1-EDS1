@@ -376,17 +376,21 @@ void graficas() {
 void IniciarGraficas() {
   String filePath = sketchPath("tracks.txt");
   BufferedReader reader = null;
+
   try {
+    // Contar cuántas líneas hay en el archivo
     reader = new BufferedReader(new FileReader(filePath));
     int contador = 0;
     while (reader.readLine() != null) contador++;
     reader.close();
 
+    // Si hay 1 o ninguna canción, no se muestran gráficas
     if (contador <= 1) {
       mostrarGraficas = false;
       return;
     }
 
+    // Volvemos a abrir el archivo para procesarlo
     reader = new BufferedReader(new FileReader(filePath));
     popularidades = new float[contador];
     titulos = new String[contador];
@@ -394,6 +398,8 @@ void IniciarGraficas() {
 
     String linea;
     int index = 0;
+
+    // Leer cada línea y extraer título, artista y popularidad
     while ((linea = reader.readLine()) != null) {
       String[] partes = linea.split(",");
       if (partes.length >= 6) {
@@ -406,7 +412,7 @@ void IniciarGraficas() {
 
     int totalCanciones = index;
 
-
+    // Ordenar canciones por popularidad descendente
     for (int a = 0; a < totalCanciones - 1; a++) {
       for (int b = a + 1; b < totalCanciones; b++) {
         if (popularidades[b] > popularidades[a]) {
@@ -425,78 +431,58 @@ void IniciarGraficas() {
       }
     }
 
-
-    a1 = "";
-    a2 = "";
-    a3 = "";
-    a4 = "";
-    a5 = "";
-    c1 = 0;
-    c2 = 0;
-    c3 = 0;
-    c4 = 0;
-    c5 = 0;
+    // Inicializar variables para conteo de artistas
+    a1 = ""; a2 = ""; a3 = ""; a4 = ""; a5 = "";
+    c1 = 0; c2 = 0; c3 = 0; c4 = 0; c5 = 0;
     total = 0;
 
-
+    // Contar cuántas veces aparece cada artista y determinar los top 5
     for (int i = 0; i < totalCanciones; i++) {
       String actual = artistas[i];
       int conteo = 0;
-
 
       for (int j = 0; j < totalCanciones; j++) {
         if (artistas[j].equals(actual)) conteo++;
       }
 
+      // Evitar repetir artistas en el top 5
       boolean yaAsignado = false;
       if (actual.equals(a1) || actual.equals(a2) || actual.equals(a3) || actual.equals(a4) || actual.equals(a5)) {
         yaAsignado = true;
       }
 
+      // Insertar artista en la posición correcta del top
       if (!yaAsignado) {
         if (conteo > c1) {
-          a5 = a4;
-          c5 = c4;
-          a4 = a3;
-          c4 = c3;
-          a3 = a2;
-          c3 = c2;
-          a2 = a1;
-          c2 = c1;
-          a1 = actual;
-          c1 = conteo;
+          a5 = a4; c5 = c4;
+          a4 = a3; c4 = c3;
+          a3 = a2; c3 = c2;
+          a2 = a1; c2 = c1;
+          a1 = actual; c1 = conteo;
         } else if (conteo > c2) {
-          a5 = a4;
-          c5 = c4;
-          a4 = a3;
-          c4 = c3;
-          a3 = a2;
-          c3 = c2;
-          a2 = actual;
-          c2 = conteo;
+          a5 = a4; c5 = c4;
+          a4 = a3; c4 = c3;
+          a3 = a2; c3 = c2;
+          a2 = actual; c2 = conteo;
         } else if (conteo > c3) {
-          a5 = a4;
-          c5 = c4;
-          a4 = a3;
-          c4 = c3;
-          a3 = actual;
-          c3 = conteo;
+          a5 = a4; c5 = c4;
+          a4 = a3; c4 = c3;
+          a3 = actual; c3 = conteo;
         } else if (conteo > c4) {
-          a5 = a4;
-          c5 = c4;
-          a4 = actual;
-          c4 = conteo;
+          a5 = a4; c5 = c4;
+          a4 = actual; c4 = conteo;
         } else if (conteo > c5) {
-          a5 = actual;
-          c5 = conteo;
+          a5 = actual; c5 = conteo;
         }
       }
 
       total++;
     }
 
+    // Calcular el total que no pertenece al top 5
     otros = total - (c1 + c2 + c3 + c4 + c5);
 
+    // Dibujar gráficas
     graficaBarras(panelX + 100, panelY + 90, 250, 330);
     graficaCircularConLeyenda(panelX + 380, panelY + 130, 220, 220);
   }
@@ -513,6 +499,7 @@ void IniciarGraficas() {
     }
   }
 }
+
 
 
 
@@ -630,7 +617,7 @@ void graficaCircularConLeyenda(float x, float y, float w, float h) {
     anguloInicio += angulo;
   }
 
-  // Leyenda
+  // Leyenda (El texto de cada valor)
   float leyendaX = x;
   float leyendaY = y + h + 10;
   int leyendaContador = 0;
@@ -682,7 +669,7 @@ void graficaCircularConLeyenda(float x, float y, float w, float h) {
   }
 }
 
-
+//Genera de manera aleatoria los colores de la grafica para que siempre sea verde
 void generarColores() {
   colorBarra1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
   colorBarra2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
