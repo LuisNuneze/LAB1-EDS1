@@ -1,6 +1,9 @@
 //Metodos para los botones
 void obtenerDestacados() {
   new_text = limitar(artistaMayorCanciones() + "\n" + artistaMasPopular() + "\n" + cancionesMayorDuracionPromedio(), 90);
+  if(cancionesMayorDuracionPromedio() == null){
+    new_text = "No se encontro un archivo";
+  }
   fade_out_text = true;
 }
 
@@ -145,13 +148,12 @@ public void aparecerMasOpciones() {
         button_ver.setY(lerp(button_ver.getY(), target_y + 80, 0.1));
         button_buscar_archivo.setY(lerp(button_buscar_archivo.getY(), target_y + 160, 0.1));
         button_eliminar.setY(lerp(button_eliminar.getY(), target_y + 240, 0.1));
-        
-        if(alpha(button_retroceder.getColorHl()) < 240){
+
+        if (alpha(button_retroceder.getColorHl()) < 240) {
           button_retroceder.setColorHl(color(red(button_retroceder.getColorHl()), green(button_retroceder.getColorHl()), blue(button_retroceder.getColorHl()), lerp(alpha(button_retroceder.getColorHl()), 255, 0.1)));
-        } else{
+        } else {
           button_retroceder.setColorHl(color(red(button_retroceder.getColorHl()), green(button_retroceder.getColorHl()), blue(button_retroceder.getColorHl()), 255));
         }
-        
       }
     }
   } else {
@@ -231,7 +233,8 @@ public String buscarArtista(String nombre) {
     }
 
     archivo.close();
-  } catch (IOException e) {
+  }
+  catch (IOException e) {
     e.printStackTrace();
     return "Error al leer el archivo.";
   }
@@ -242,7 +245,7 @@ public String buscarArtista(String nombre) {
 public String verContenido() {
   //Declaramos una variable que tenga la ruta y otra donde almacenar el resultado
   String resultado = "", ruta_artists = sketchPath("artists.txt");
-  
+
   try {
     BufferedReader Archivo = new BufferedReader(new FileReader(ruta_artists));
     String linea;
@@ -253,7 +256,8 @@ public String verContenido() {
     }
 
     Archivo.close();
-  } catch (IOException e) {
+  }
+  catch (IOException e) {
     e.printStackTrace();
     return "Error al leer el archivo.";
   }
@@ -277,8 +281,8 @@ public String eliminarArchivos() {
     pw4.delete();
 
     return "Archivos eliminados.";
-
-  } catch (Exception e) {
+  }
+  catch (Exception e) {
     println("Error al eliminar archivos: " + e.getMessage());
     return "Error al eliminar archivos";
   }
@@ -288,39 +292,38 @@ public String eliminarArchivos() {
 String ordenarPorPopularidad() {
   String filePath = sketchPath("artists.txt");
   String tempPath = sketchPath("artists_temp_ordenamiento.txt");
-  
-  // 1) Cargo todas las líneas
-  String[] lines = loadStrings(filePath);
-  int n = lines.length;
-  
-  // 2) Calculo la "popularidad total" de cada línea
-  int[] pops = new int[n];
-  for (int i = 0; i < n; i++) {
-    pops[i] = calcularPopularidad(lines[i]);
-  }
 
-  // 3) Selection sort paralelo sobre lines[] y pops[]
-  for (int i = 0; i < n - 1; i++) {
-    int maxIdx = i;
-    for (int j = i + 1; j < n; j++) {
-      if (pops[j] > pops[maxIdx]) {
-        maxIdx = j;
+  try {
+    // 1) Cargo todas las líneas
+    String[] lines = loadStrings(filePath);
+    int n = lines.length;
+
+    // 2) Calculo la "popularidad total" de cada línea
+    int[] pops = new int[n];
+    for (int i = 0; i < n; i++) {
+      pops[i] = calcularPopularidad(lines[i]);
+    }
+
+    // 3) Selection sort paralelo sobre lines[] y pops[]
+    for (int i = 0; i < n - 1; i++) {
+      int maxIdx = i;
+      for (int j = i + 1; j < n; j++) {
+        if (pops[j] > pops[maxIdx]) {
+          maxIdx = j;
+        }
+      }
+      if (maxIdx != i) {
+        // intercambio en pops[]
+        int tmpPop = pops[i];
+        pops[i]    = pops[maxIdx];
+        pops[maxIdx] = tmpPop;
+        // intercambio en lines[]
+        String tmpLine = lines[i];
+        lines[i]       = lines[maxIdx];
+        lines[maxIdx]  = tmpLine;
       }
     }
-    if (maxIdx != i) {
-      // intercambio en pops[]
-      int tmpPop = pops[i];
-      pops[i]    = pops[maxIdx];
-      pops[maxIdx] = tmpPop;
-      // intercambio en lines[]
-      String tmpLine = lines[i];
-      lines[i]       = lines[maxIdx];
-      lines[maxIdx]  = tmpLine;
-    }
-  }
-
-  // 4) Escribo el arreglo ordenado en el temporal
-  try {
+    // 4) Escribo el arreglo ordenado en el temporal
     BufferedWriter bw = new BufferedWriter(new FileWriter(tempPath));
     for (String l : lines) {
       bw.write(l);
@@ -339,7 +342,8 @@ String ordenarPorPopularidad() {
       println("No se pudo borrar el archivo original.");
       return "No se pudo borrar el archivo original.";
     }
-  } catch (Exception e) {
+  }
+  catch (Exception e) {
     println("Error al escribir archivos: " + e.getMessage());
     return "Error al ordenar el archivo";
   }
@@ -351,19 +355,20 @@ int calcularPopularidad(String line) {
   // uso Java String.split(regex, limit) para partir SOLO en la primer coma
   String[] parts = line.split(",", 2);
   if (parts.length < 2) return 0;
-  
+
   // parts[1] = "Shallow:73;Music To My Eyes:56;..."
   String canciones = parts[1];
   // aquí uso split de Processing con char delimitador
   String[] items = split(canciones, ';');
-  
+
   int suma = 0;
   for (String it : items) {
     int idx = it.lastIndexOf(':');
     if (idx != -1 && idx + 1 < it.length()) {
       try {
         suma += Integer.parseInt(it.substring(idx + 1).trim());
-      } catch (NumberFormatException ex) {
+      }
+      catch (NumberFormatException ex) {
         // ignorar si no es un número válido
       }
     }
