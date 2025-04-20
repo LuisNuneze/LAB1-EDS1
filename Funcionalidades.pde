@@ -220,7 +220,7 @@ public String buscarArtista(String input_text) {
 
     while ((linea = archivo.readLine()) != null) {
       String[] campos = linea.split(",");
-
+      
       if (campos.length > 0 && campos[0].equalsIgnoreCase(input_text)) {
         // Reemplazar punto y coma por salto de línea al igual que coma
         resultado_busqueda = linea.replace(",", "\n").replace(";", "\n");
@@ -277,4 +277,91 @@ public String eliminarArchivos() {
     println("Error al eliminar archivos: " + e.getMessage());
     return "Error al eliminar archivos";
   }
+}
+
+// Metodo para el boton ordenar
+String ordenarPorPopularidad() {
+  String filePath = sketchPath("artists.txt");
+  String tempPath = sketchPath("artists_temp_ordenamiento.txt");
+  
+  // 1) Cargo todas las líneas
+  String[] lines = loadStrings(filePath);
+  int n = lines.length;
+  
+  // 2) Calculo la "popularidad total" de cada línea
+  int[] pops = new int[n];
+  for (int i = 0; i < n; i++) {
+    pops[i] = calcularPopularidad(lines[i]);
+  }
+
+  // 3) Selection sort paralelo sobre lines[] y pops[]
+  for (int i = 0; i < n - 1; i++) {
+    int maxIdx = i;
+    for (int j = i + 1; j < n; j++) {
+      if (pops[j] > pops[maxIdx]) {
+        maxIdx = j;
+      }
+    }
+    if (maxIdx != i) {
+      // intercambio en pops[]
+      int tmpPop = pops[i];
+      pops[i]    = pops[maxIdx];
+      pops[maxIdx] = tmpPop;
+      // intercambio en lines[]
+      String tmpLine = lines[i];
+      lines[i]       = lines[maxIdx];
+      lines[maxIdx]  = tmpLine;
+    }
+  }
+
+  // 4) Escribo el arreglo ordenado en el temporal
+  try {
+    BufferedWriter bw = new BufferedWriter(new FileWriter(tempPath));
+    for (String l : lines) {
+      bw.write(l);
+      bw.newLine();
+    }
+    bw.close();
+
+    // 5) Reemplazo el original por el temporal
+    File orig = new File(filePath);
+    File temp = new File(tempPath);
+    if (orig.delete()) {
+      temp.renameTo(orig);
+      println("Archivo ordenado y reemplazado en artists.txt");
+      return "Archivo ordenado y reemplazado en artists.txt";
+    } else {
+      println("No se pudo borrar el archivo original.");
+      return "No se pudo borrar el archivo original.";
+    }
+  } catch (Exception e) {
+    println("Error al escribir archivos: " + e.getMessage());
+    return "Error al ordenar el archivo";
+  }
+}
+
+// Auxiliar: suma todas las populares de una línea estilo:
+//     "Bradley Cooper,Shallow:73;Music To My Eyes:56;..."
+int calcularPopularidad(String line) {
+  // uso Java String.split(regex, limit) para partir SOLO en la primer coma
+  String[] parts = line.split(",", 2);
+  if (parts.length < 2) return 0;
+  
+  // parts[1] = "Shallow:73;Music To My Eyes:56;..."
+  String canciones = parts[1];
+  // aquí uso split de Processing con char delimitador
+  String[] items = split(canciones, ';');
+  
+  int suma = 0;
+  for (String it : items) {
+    int idx = it.lastIndexOf(':');
+    if (idx != -1 && idx + 1 < it.length()) {
+      try {
+        suma += Integer.parseInt(it.substring(idx + 1).trim());
+      } catch (NumberFormatException ex) {
+        // ignorar si no es un número válido
+      }
+    }
+  }
+  return suma;
 }

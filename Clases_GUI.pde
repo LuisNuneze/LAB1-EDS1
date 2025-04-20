@@ -260,8 +260,10 @@ public class NoticeWindow extends ElementoGUI {
       fill(this.color_df);
       rect(this.x, this.y, this.w, this.h, 10);
       textAlign(LEFT, TOP);
-      text(this.label, this.x + 15, this.y + 10);
+      textSize(16);
+      text(this.label, this.x + 20, this.y + 10);
       textAlign(CENTER, CENTER);
+      textSize(20);
       fill(0);
       stroke(color_highlight);
       if (millis() - time_start < 5000) {

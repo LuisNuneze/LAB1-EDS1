@@ -88,7 +88,11 @@ void inicializarGUI() {
   );
   button_buscar = new ButtonText(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar", () -> obtenerCrearArchivos());
 
-  button_ordenar = new ButtonText(40, 700, width / 2 - 80, 50, "Ordenar", () -> println("en proceso"));
+  button_ordenar = new ButtonText(40, 700, width / 2 - 80, 50, "Ordenar", () -> {
+    fade_out_text = true;
+    new_text = ordenarPorPopularidad();
+  }
+  );
   button_ver = new ButtonText(40, 800, width / 2 - 80, 50, "Ver", () -> {
     fade_out_text = true;
     new_text = verContenido();
@@ -118,8 +122,8 @@ void inicializarGUI() {
   button_retroceder.setColorHl(color(red(button_retroceder.getColorHl()), green(button_retroceder.getColorHl()), blue(button_retroceder.getColorHl()), 1));
 
   // Creamos ventanas de noticias
-  notice_buscar_error = new NoticeWindow(175, -55, 350, 45, "ERROR 404: Playlist no encontrada", color(255, 36, 36, 150), () -> println("En processing"));
-  notice_buscar_exito = new NoticeWindow(175, -55, 350, 45, "Playlist encontrada existosamente", color(29, 185, 84, 150), () -> println("En processing"));
+  notice_buscar_error = new NoticeWindow(225, -55, 350, 45, "ERROR 404: Playlist no encontrada", color(255, 36, 36, 150), () -> println("En processing"));
+  notice_buscar_exito = new NoticeWindow(225, -55, 350, 45, "Playlist encontrada existosamente", color(29, 185, 84, 150), () -> println("En processing"));
 
   // Cargamos la fuente
   fuente = createFont(sketchPath("GOTHAM-MEDIUM.TTF"), 32);
@@ -210,16 +214,18 @@ void mostrarGUI() {
     button_retroceder.display();
   }
   textAlign(LEFT, TOP);
-
+  
+  //Se muestra texto de entrada
   String[] lines;
-  if (input_text.length() > 19) {
-    lines = input_text.substring(0, 19).split("\n");
+  if (input_text.length() > 16) {
+    lines = input_text.substring(0, 16).split("\n");
     lines[0] += "...";
   } else {
     lines = input_text.split("\n");
   }
   int line_count = min(lines.length, 2);
   for (int i = 0; i < line_count; i++) {
+    fill(color_highlight);
     text(lines[i], input_box_x + 10, input_box_y + 10 + i * 24);
   }
 
@@ -360,7 +366,7 @@ void graficas() {
   fill(0);
   noStroke();
   rect(panelX+50, panelY+50, panelW, panelH, 15);
-  println(panelX);
+ 
   if (panelX > -680) {
     button_quitG.display();
     IniciarGraficas();
