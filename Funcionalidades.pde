@@ -211,3 +211,70 @@ String obtener_texto_portapapeles() {
     return "";
   }
 }
+
+public String buscarArtista(String input_text) {
+  String resultado_busqueda = "No encontrado.", ruta_artists = sketchPath("artists.txt");
+  try {
+    BufferedReader archivo = new BufferedReader(new FileReader(ruta_artists));
+    String linea;
+
+    while ((linea = archivo.readLine()) != null) {
+      String[] campos = linea.split(",");
+
+      if (campos.length > 0 && campos[0].equalsIgnoreCase(input_text)) {
+        // Reemplazar punto y coma por salto de línea al igual que coma
+        resultado_busqueda = linea.replace(",", "\n").replace(";", "\n");
+        break;
+      }
+    }
+
+    archivo.close();
+  } catch (IOException e) {
+    e.printStackTrace();
+    return "Error al leer el archivo.";
+  }
+
+  return resultado_busqueda;
+}
+
+public String verContenido() {
+  String resultado = "", ruta_artists = sketchPath("artists.txt");
+
+  try {
+    BufferedReader br = new BufferedReader(new FileReader(ruta_artists));
+    String linea;
+
+    while ((linea = br.readLine()) != null) {
+      resultado += linea.replace(",", " | ").replace(";", " | ") + "\n";
+    }
+
+    br.close();
+  } catch (IOException e) {
+    e.printStackTrace();
+    return "Error al leer el archivo.";
+  }
+
+  return resultado;
+}
+
+public String eliminarArchivos() {
+  try {
+    PrintWriter pw1 = new PrintWriter(new FileWriter(sketchPath("artists.txt")));
+    pw1.close();
+
+    PrintWriter pw2 = new PrintWriter(new FileWriter(sketchPath("artists_temp.txt")));
+    pw2.close();
+
+    PrintWriter pw3 = new PrintWriter(new FileWriter(sketchPath("tracks.txt")));
+    pw3.close();
+
+    PrintWriter pw4 = new PrintWriter(new FileWriter(sketchPath("playlist_id.txt")));
+    pw4.close();
+
+    return "Archivos eliminados.";
+
+  } catch (IOException e) {
+    println("Error al eliminar archivos: " + e.getMessage());
+    return "Error al eliminar archivos";
+  }
+}

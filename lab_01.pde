@@ -13,7 +13,7 @@ import java.awt.Toolkit;
 String pythonExecutable;
 
 void setup() {
-  size(700, 600);
+  size(700, 600, P2D);
   inicializarGUI();
 
 

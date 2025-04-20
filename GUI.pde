@@ -89,9 +89,20 @@ void inicializarGUI() {
   button_buscar = new ButtonText(input_box_x + input_box_width + 50, input_box_y, 90, input_box_height, "Buscar", () -> obtenerCrearArchivos());
 
   button_ordenar = new ButtonText(40, 700, width / 2 - 80, 50, "Ordenar", () -> println("en proceso"));
-  button_ver = new ButtonText(40, 800, width / 2 - 80, 50, "Ver", () -> println("en proceso"));
-  button_buscar_archivo = new ButtonText(40, 900, width / 2 - 80, 50, "Buscar", () -> println("en proceso"));
-  button_eliminar = new ButtonText(40, 1000, width / 2 - 80, 50, "Eliminar", () -> println("en proceso"));
+  button_ver = new ButtonText(40, 800, width / 2 - 80, 50, "Ver", () -> {
+    fade_out_text = true;
+    new_text = verContenido();
+  }
+  );
+  button_buscar_archivo = new ButtonText(40, 900, width / 2 - 80, 50, "Buscar", () -> {
+    fade_out_text = true;
+    new_text = buscarArtista(input_text);
+  }
+  );
+  button_eliminar = new ButtonText(40, 1000, width / 2 - 80, 50, "Eliminar", () -> {
+    fade_out_text = true;
+    new_text = eliminarArchivos();
+  });
 
 
 
@@ -376,7 +387,7 @@ void IniciarGraficas() {
     artistas = new String[contador];
 
     String linea;
-    int index = 0;  
+    int index = 0;
     while ((linea = reader.readLine()) != null) {
       String[] partes = linea.split(",");
       if (partes.length >= 6) {
@@ -422,7 +433,7 @@ void IniciarGraficas() {
     total = 0;
 
 
-    for (int i = 0; i < totalCanciones; i++) {  
+    for (int i = 0; i < totalCanciones; i++) {
       String actual = artistas[i];
       int conteo = 0;
 
@@ -667,16 +678,16 @@ void graficaCircularConLeyenda(float x, float y, float w, float h) {
 
 
 void generarColores() {
-   colorBarra1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorBarra2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorBarra3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorBarra4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorBarra5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
- 
-   colorTorta1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorTorta2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorTorta3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorTorta4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorTorta5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
-   colorTortaOtros = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
- }
+  colorBarra1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorBarra2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorBarra3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorBarra4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorBarra5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+
+  colorTorta1 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorTorta2 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorTorta3 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorTorta4 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorTorta5 = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+  colorTortaOtros = color(int(random(10, 50)), int(random(120, 255)), int(random(10, 50)));
+}
